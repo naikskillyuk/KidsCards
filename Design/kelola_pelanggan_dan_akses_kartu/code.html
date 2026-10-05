@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#414753", "error": "#ba1a1a", "on-secondary-container": "#00732b", "secondary-container": "#93f59c", "primary-container": "#4d96ff", "surface-container-highest": "#d6e3ff", "surface-variant": "#d6e3ff", "surface-tint": "#005db8", "on-tertiary": "#ffffff", "on-background": "#0d1c33", "on-tertiary-fixed-variant": "#5e4200", "tertiary-container": "#c48d00", "surface-container-lowest": "#ffffff", "on-primary-fixed-variant": "#00468c", "inverse-primary": "#a9c7ff", "primary-fixed": "#d6e3ff", "inverse-surface": "#233149", "surface-container-low": "#f0f3ff", "on-tertiary-fixed": "#271900", "on-secondary-fixed-variant": "#00531d", "on-primary": "#ffffff", "on-error-container": "#93000a", "on-primary-container": "#002e61", "secondary-fixed-dim": "#7bdb85", "on-error": "#ffffff", "on-secondary-fixed": "#002107", "on-surface": "#0d1c33", "primary-fixed-dim": "#a9c7ff", "surface-bright": "#f9f9ff", "on-tertiary-container": "#402c00", "tertiary-fixed": "#ffdea8", "tertiary": "#7c5800", "on-primary-fixed": "#001b3e", "background": "#f9f9ff", "surface-container": "#e8eeff", "tertiary-fixed-dim": "#ffba20", "secondary": "#006e29", "surface-container-high": "#dfe8ff", "surface": "#f9f9ff", "error-container": "#ffdad6", "surface-dim": "#ccdaf9", "secondary-fixed": "#96f89f", "inverse-on-surface": "#ecf0ff", "outline-variant": "#c1c6d5", "on-secondary": "#ffffff", "outline": "#727784", "primary": "#005db8" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2.5rem", "space-md": "1rem", "margin": "1.25rem", "space-xs": "0.25rem", "gutter-desktop": "2rem", "space-lg": "1.5rem", "margin-desktop": "3rem", "space-sm": "0.5rem", "gutter": "1rem", "gutter-tablet": "1.5rem", "margin-tablet": "2rem" }, "fontFamily": { "display": [ "Plus Jakarta Sans" ], "headline-md": [ "Plus Jakarta Sans" ], "body-lg": [ "Be Vietnam Pro" ], "headline-sm": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Plus Jakarta Sans" ], "headline-lg": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "body-sm": [ "Be Vietnam Pro" ], "body-md": [ "Be Vietnam Pro" ], "label-lg": [ "Plus Jakarta Sans" ] }, "fontSize": { "display": [ "3rem", { "lineHeight": "3.5rem", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "headline-md": [ "1.5rem", { "lineHeight": "2rem", "fontWeight": "700" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.75rem", "fontWeight": "500" } ], "headline-sm": [ "1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" } ], "headline-lg-mobile": [ "1.625rem", { "lineHeight": "2.125rem", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg": [ "2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "label-md": [ "0.875rem", { "lineHeight": "1.125rem", "letterSpacing": "0.02em", "fontWeight": "700" } ], "label-sm": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.03em", "fontWeight": "600" } ], "body-sm": [ "0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" } ], "body-md": [ "1rem", { "lineHeight": "1.5rem", "fontWeight": "400" } ], "label-lg": [ "1rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "700" } ] } } } }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><img alt="Cute friendly cheerful owl mascot holding a colorful flashcard, modern flat vector logo icon for kids flashcard learning app, warm yellow, sky blue, and vibrant accents, clean rounded shapes, child-friendly, sticker aesthetic, white background. Design context: - Primary color: #4d96ff - Font: plusJakartaSans - Mode: light - Roundness: rounded-md . The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U8iTfW9QBQf7h1b9TWymhZyGdWJi6PZhDoqCMngPEjVbIwIg__RuUgPUOHWFybiAxRaol1vb2U7RW_UffctJgB0x6Hv1xa31g9DvBIwn9S-HWR-1EfEOs4zaLDAqAatrwmCLu3GDMm-XTBiBzNNP_4tnCJqEAk-KdluIS5DgnFecM3cGsuw5vAoPYeW5jyUbDCIWY9u3DypofFmd22leYKsfLtVekoFM8wv1mYdNHqvwX6cpxbKcRGKPjS"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">Flashcard Kids</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-space-xs">Admin Portal</span></div></div><nav class="px-space-md py-space-md flex flex-col gap-space-sm" data-active-classes="bg-surface-container-highest text-primary font-bold rounded-xl"><div class="px-space-sm pt-space-xs pb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Overview</span></div><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard-utama" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard Utama</span></a><div class="px-space-sm pt-space-md pb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Pelanggan &amp; Transaksi</span></div><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2.5 transition-all bg-surface-container-highest text-primary font-bold rounded-xl" data-path="kelola-pelanggan-dan-akses" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span>Kelola Pelanggan &amp; Akses</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="verifikasi-pembayaran-transaksi" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Verifikasi Pembayaran</span></div><span class="bg-error text-on-error font-label-sm text-label-sm px-2 py-0.5 rounded-full">3</span></a><div class="px-space-sm pt-space-md pb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Manajemen Konten</span></div><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="kelola-materi-dan-topik" href="#"><span class="material-symbols-outlined text-[20px]">auto_stories</span><span>Kelola Materi &amp; Serial</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="bank-pertanyaan-kuis" href="#"><span class="material-symbols-outlined text-[20px]">quiz</span><span>Bank Pertanyaan Kuis</span></a><div class="px-space-sm pt-space-md pb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Pengaturan</span></div><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pengaturan-akun-staf" href="#"><span class="material-symbols-outlined text-[20px]">manage_accounts</span><span>Pengaturan Akun &amp; Staf</span></a></nav></div><div class="p-space-md m-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.03)] flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">Status Server</span><span class="h-2 w-2 rounded-full bg-secondary"></span></div><p class="font-body-sm text-body-sm text-on-surface">Payment Gateway Sync</p><div class="w-full bg-surface-container-high rounded-full h-1.5 mt-1"><div class="bg-secondary h-1.5 rounded-full w-full"></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="hidden lg:flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">home</span><span>/</span><span class="text-primary font-bold">Flashcard Admin</span></div><div class="relative flex-1"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-4 py-2 bg-surface-container-low rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.02)] transition-all" placeholder="Cari pelanggan, transaksi ID, kartu..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold"><span class="h-2 w-2 rounded-full bg-secondary"></span><span>Sistem QRIS/VA Online</span></div><div class="relative"><button class="h-10 w-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button><span class="absolute top-2 right-2 h-2.5 w-2.5 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></div><div class="h-8 w-[1px] bg-surface-container-high"></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Budi Santoso</span><span class="font-label-sm text-label-sm text-primary font-semibold">Super Admin</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span></div></div></header><main class="relative pt-16 bg-background min-h-screen px-space-lg py-space-lg w-full"><div class="flex flex-col w-full">
+<!-- Top Bar: Header & Quick Actions -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-surface-container-highest text-primary">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-bold">Direktori Akses Belajar</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Kelola Pelanggan &amp; Hak Akses Kartu</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Pantau data akun wali/orang tua, histori pembelian, dan kelola status hak akses kartu flashcard secara instan.</p>
+</div>
+<!-- Quick Action Buttons (Tactile Pop-Style) -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="inline-flex items-center gap-2 px-space-md py-3 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm border-b-4 border-surface-container-high hover:bg-surface-container-low active:translate-y-1 active:border-b-0 transition-all" onclick="document.getElementById('exportModal').classList.toggle('hidden')">
+<span class="material-symbols-outlined text-[20px] text-primary">download</span>
+<span>Export Data (.CSV)</span>
+</button>
+<button class="inline-flex items-center gap-2 px-space-md py-3 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-md border-b-4 border-on-primary-fixed-variant hover:bg-surface-tint active:translate-y-1 active:border-b-0 transition-all" onclick="document.getElementById('addCustomerModal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+<span>Tambah Akun Manual</span>
+</button>
+</div>
+</div>
+<!-- KPI Mini Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md mb-space-lg">
+<!-- KPI 1 -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-lowest p-space-md shadow-sm border-b-4 border-surface-container-high transition-transform hover:-translate-y-0.5">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Pelanggan</span>
+<p class="font-headline-md text-headline-md text-on-surface mt-1">1,420 <span class="font-label-md text-label-md text-on-surface-variant font-normal">Wali</span></p>
+</div>
+<div class="w-11 h-11 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">group</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center gap-2">
+<span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +12%
+        </span>
+<span class="font-body-sm text-body-sm text-outline">Bulan ini (+152 wali)</span>
+</div>
+<div class="absolute bottom-0 right-0 w-24 h-12 opacity-30 pointer-events-none">
+<svg class="w-full h-full text-primary" fill="none" stroke="currentColor" stroke-width="3" viewbox="0 0 100 40">
+<path d="M0 35 Q 25 30, 50 15 T 100 5"></path>
+</svg>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-lowest p-space-md shadow-sm border-b-4 border-surface-container-high transition-transform hover:-translate-y-0.5">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Akses Kartu Aktif</span>
+<p class="font-headline-md text-headline-md text-secondary mt-1">1,185 <span class="font-label-md text-label-md text-on-surface-variant font-normal">Akun</span></p>
+</div>
+<div class="w-11 h-11 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center gap-2">
+<div class="w-24 bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 83.4%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">83.4% Konversi</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-lowest p-space-md shadow-sm border-b-4 border-surface-container-high transition-transform hover:-translate-y-0.5">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Kartu Terjual</span>
+<p class="font-headline-md text-headline-md text-primary mt-1">3,840 <span class="font-label-md text-label-md text-on-surface-variant font-normal">Lisensi</span></p>
+</div>
+<div class="w-11 h-11 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">style</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center gap-2">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Rata-rata <strong>2.7 serial</strong> per wali</span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-lowest p-space-md shadow-sm border-b-4 border-tertiary-fixed-dim transition-transform hover:-translate-y-0.5">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Verifikasi Manual</span>
+<p class="font-headline-md text-headline-md text-tertiary mt-1">14 <span class="font-label-md text-label-md text-on-surface-variant font-normal">Tertunda</span></p>
+</div>
+<div class="w-11 h-11 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-container animate-pulse">
+<span class="material-symbols-outlined text-[24px]">hourglass_top</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span> Butuh approval CS
+        </span>
+<button class="text-primary hover:underline font-label-sm text-label-sm font-semibold" onclick="filterStatus('pending')">Tinjau →</button>
+</div>
+</div>
+</div>
+<!-- Filters & Search Toolbar -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm border-b-4 border-surface-container-high mb-space-md">
+<div class="flex flex-col lg:flex-row gap-space-md items-stretch lg:items-center justify-between">
+<!-- Search Input -->
+<div class="relative flex-1 max-w-xl">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">person_search</span>
+<input class="w-full pl-11 pr-4 py-2.5 bg-surface-container-low rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest shadow-sm transition-all" id="searchInput" placeholder="Cari nama orang tua, nama anak, email, nomor WA..." type="text"/>
+</div>
+<!-- Filters Group -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Status Akses Filter -->
+<div class="relative inline-flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px] pointer-events-none">filter_alt</span>
+<select class="appearance-none pl-9 pr-8 py-2.5 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-xl focus:outline-none focus:bg-surface-container-lowest shadow-sm cursor-pointer" id="statusFilter">
+<option value="all">Semua Status Akses</option>
+<option value="active">Akses Aktif</option>
+<option value="none">Belum Memiliki Kartu</option>
+<option value="suspended">Akses Ditangguhkan</option>
+<option value="pending">Menunggu Verifikasi</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 text-outline text-[18px] pointer-events-none">arrow_drop_down</span>
+</div>
+<!-- Serial Kartu Filter -->
+<div class="relative inline-flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px] pointer-events-none">collections_bookmark</span>
+<select class="appearance-none pl-9 pr-8 py-2.5 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-xl focus:outline-none focus:bg-surface-container-lowest shadow-sm cursor-pointer" id="seriesFilter">
+<option value="all">Semua Koleksi Seri</option>
+<option value="nabi">Kisah 25 Nabi</option>
+<option value="adab">Adab &amp; Karakter Baik</option>
+<option value="logika">Pola Bentuk &amp; Logika</option>
+<option value="sahabat">Kisah Sahabat Cilik</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 text-outline text-[18px] pointer-events-none">arrow_drop_down</span>
+</div>
+<button class="p-2.5 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors" onclick="resetFilters()" title="Reset Filter">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+</button>
+</div>
+</div>
+<!-- Active Filter Tags / Chips -->
+<div class="flex items-center gap-space-xs mt-space-sm pt-space-xs overflow-x-auto">
+<span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">Filter Cepat:</span>
+<button class="px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shrink-0 shadow-sm">Semua (1,420)</button>
+<button class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm shrink-0">Wali Baru Pekan Ini (+48)</button>
+<button class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm shrink-0">Memiliki &gt;2 Kartu (412)</button>
+<button class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm shrink-0">Transfer Bank Manual (14)</button>
+</div>
+</div>
+<!-- Main Comprehensive Customer Table -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm border-b-4 border-surface-container-high overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3.5 px-space-md font-bold">Wali &amp; Anak Belajar</th>
+<th class="py-3.5 px-space-md font-bold">Kontak Terdaftar</th>
+<th class="py-3.5 px-space-md font-bold">Kartu Flashcard Dimiliki</th>
+<th class="py-3.5 px-space-md font-bold">Total Belanja</th>
+<th class="py-3.5 px-space-md font-bold">Status Hak Akses</th>
+<th class="py-3.5 px-space-md font-bold text-right">Kelola Akses</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<!-- Row 1: Bunda Siti -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest flex items-center justify-center font-headline-sm text-headline-sm text-primary font-bold shadow-sm">
+                  SR
+                </div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-bold">Bunda Siti Rahmawati</span>
+<span class="px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-[10px] font-bold">VERIFIED</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-tertiary">face</span>
+<span>Anak: <strong class="text-on-surface">Arkan (5 thn)</strong></span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md font-body-sm text-body-sm">
+<div class="text-on-surface">bunda.siti@gmail.com</div>
+<div class="flex items-center gap-1 text-on-surface-variant text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">chat</span>
+<span>0812-3456-7890</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-wrap gap-1.5 max-w-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-high text-primary font-label-sm text-[11px] font-bold shadow-sm">
+<span class="material-symbols-outlined text-[13px]">auto_stories</span>
+                  Kisah 25 Nabi
+                </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-high text-primary font-label-sm text-[11px] font-bold shadow-sm">
+<span class="material-symbols-outlined text-[13px]">shapes</span>
+                  Pola Bentuk &amp; Logika
+                </span>
+</div>
+<span class="font-label-sm text-[11px] text-outline mt-1 block">Daftar: 12 Jan 2025</span>
+</td>
+<td class="py-4 px-space-md">
+<span class="font-label-md text-label-md text-on-surface font-bold">Rp 50.000</span>
+<span class="font-label-sm text-[11px] text-secondary block font-semibold">2 Serial Aktif</span>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-2">
+<!-- Toggle UI -->
+<button aria-checked="true" class="relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full bg-secondary transition-colors duration-200 ease-in-out focus:outline-none" onclick="toggleAccess(this)" role="switch">
+<span class="translate-x-5 inline-block h-5 w-5 transform rounded-full bg-surface-container-lowest shadow ring-0 transition duration-200 ease-in-out my-0.5"></span>
+</button>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Akses Penuh
+                </span>
+</div>
+</td>
+<td class="py-4 px-space-md text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-2 rounded-xl bg-surface-container-low text-primary hover:bg-surface-container-high transition-colors" onclick="openDrawer('Bunda Siti Rahmawati', 'bunda.siti@gmail.com', 'Arkan (5 thn)', ['Kisah 25 Nabi', 'Pola Bentuk &amp; Logika'])" title="Detail Hak Akses">
+<span class="material-symbols-outlined text-[19px]">tune</span>
+</button>
+<button class="p-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors" onclick="showQuickToast('Link reset password terkirim via WhatsApp!')" title="Kirim Reset Password">
+<span class="material-symbols-outlined text-[19px]">lock_reset</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Ayah Hendra Pratama -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest flex items-center justify-center font-headline-sm text-headline-sm text-primary font-bold shadow-sm">
+                  HP
+                </div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-bold">Ayah Hendra Pratama</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px] font-bold">PREMIUM WALI</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-tertiary">face_3</span>
+<span>Anak: <strong class="text-on-surface">Naura (6 thn)</strong></span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md font-body-sm text-body-sm">
+<div class="text-on-surface">hendra.p@corporate.id</div>
+<div class="flex items-center gap-1 text-on-surface-variant text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">chat</span>
+<span>0857-1122-3344</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-wrap gap-1.5 max-w-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-high text-primary font-label-sm text-[11px] font-bold shadow-sm">
+<span class="material-symbols-outlined text-[13px]">auto_stories</span>
+                  Kisah 25 Nabi
+                </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-high text-primary font-label-sm text-[11px] font-bold shadow-sm">
+<span class="material-symbols-outlined text-[13px]">favorite</span>
+                  Adab &amp; Karakter
+                </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-high text-primary font-label-sm text-[11px] font-bold shadow-sm">
+<span class="material-symbols-outlined text-[13px]">diversity_1</span>
+                  Kisah Sahabat
+                </span>
+</div>
+<span class="font-label-sm text-[11px] text-outline mt-1 block">Daftar: 18 Jan 2025</span>
+</td>
+<td class="py-4 px-space-md">
+<span class="font-label-md text-label-md text-on-surface font-bold">Rp 75.000</span>
+<span class="font-label-sm text-[11px] text-secondary block font-semibold">3 Serial Aktif</span>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-2">
+<button aria-checked="true" class="relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full bg-secondary transition-colors duration-200 ease-in-out focus:outline-none" onclick="toggleAccess(this)" role="switch">
+<span class="translate-x-5 inline-block h-5 w-5 transform rounded-full bg-surface-container-lowest shadow ring-0 transition duration-200 ease-in-out my-0.5"></span>
+</button>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Akses Penuh
+                </span>
+</div>
+</td>
+<td class="py-4 px-space-md text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-2 rounded-xl bg-surface-container-low text-primary hover:bg-surface-container-high transition-colors" onclick="openDrawer('Ayah Hendra Pratama', 'hendra.p@corporate.id', 'Naura (6 thn)', ['Kisah 25 Nabi', 'Adab &amp; Karakter', 'Kisah Sahabat'])" title="Detail Hak Akses">
+<span class="material-symbols-outlined text-[19px]">tune</span>
+</button>
+<button class="p-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors" onclick="showQuickToast('Link reset password terkirim via WhatsApp!')" title="Kirim Reset Password">
+<span class="material-symbols-outlined text-[19px]">lock_reset</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Ibu Dian Maharani -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest flex items-center justify-center font-headline-sm text-headline-sm text-primary font-bold shadow-sm">
+                  DM
+                </div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold">Ibu Dian Maharani</span>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-tertiary">face</span>
+<span>Anak: <strong class="text-on-surface">Kenzo (4 thn)</strong></span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md font-body-sm text-body-sm">
+<div class="text-on-surface">dian.maharani@yahoo.com</div>
+<div class="flex items-center gap-1 text-on-surface-variant text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">chat</span>
+<span>0821-9988-7766</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-wrap gap-1.5 max-w-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-high text-primary font-label-sm text-[11px] font-bold shadow-sm">
+<span class="material-symbols-outlined text-[13px]">shapes</span>
+                  Pola Bentuk &amp; Logika
+                </span>
+</div>
+<span class="font-label-sm text-[11px] text-outline mt-1 block">Daftar: 25 Jan 2025</span>
+</td>
+<td class="py-4 px-space-md">
+<span class="font-label-md text-label-md text-on-surface font-bold">Rp 25.000</span>
+<span class="font-label-sm text-[11px] text-secondary block font-semibold">1 Serial Aktif</span>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-2">
+<button aria-checked="true" class="relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full bg-secondary transition-colors duration-200 ease-in-out focus:outline-none" onclick="toggleAccess(this)" role="switch">
+<span class="translate-x-5 inline-block h-5 w-5 transform rounded-full bg-surface-container-lowest shadow ring-0 transition duration-200 ease-in-out my-0.5"></span>
+</button>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Akses Penuh
+                </span>
+</div>
+</td>
+<td class="py-4 px-space-md text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-2 rounded-xl bg-surface-container-low text-primary hover:bg-surface-container-high transition-colors" onclick="openDrawer('Ibu Dian Maharani', 'dian.maharani@yahoo.com', 'Kenzo (4 thn)', ['Pola Bentuk &amp; Logika'])" title="Detail Hak Akses">
+<span class="material-symbols-outlined text-[19px]">tune</span>
+</button>
+<button class="p-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors" onclick="showQuickToast('Link reset password terkirim via WhatsApp!')" title="Kirim Reset Password">
+<span class="material-symbols-outlined text-[19px]">lock_reset</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Bapak Budi Santoso (Pending/Non-Aktif) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group bg-surface-container-low/30">
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center font-headline-sm text-headline-sm text-outline font-bold shadow-sm">
+                  BS
+                </div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold">Bapak Budi Santoso</span>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-tertiary">face_4</span>
+<span>Anak: <strong class="text-on-surface">Aisyah (7 thn)</strong></span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md font-body-sm text-body-sm">
+<div class="text-on-surface">budi.santoso@gmail.com</div>
+<div class="flex items-center gap-1 text-on-surface-variant text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-outline">chat</span>
+<span>0813-7766-5544</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-tertiary-fixed text-on-tertiary-container font-label-sm text-[11px] font-bold">
+<span class="material-symbols-outlined text-[13px]">pending</span>
+                Menunggu Pembayaran
+              </span>
+<span class="font-label-sm text-[11px] text-outline mt-1 block">Daftar: Hari Ini (09:40 WIB)</span>
+</td>
+<td class="py-4 px-space-md">
+<span class="font-label-md text-label-md text-outline font-bold">Rp 0</span>
+<span class="font-label-sm text-[11px] text-outline block font-medium">Belum Checkout</span>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-2">
+<button aria-checked="false" class="relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full bg-outline-variant transition-colors duration-200 ease-in-out focus:outline-none" onclick="toggleAccess(this)" role="switch">
+<span class="translate-x-1 inline-block h-5 w-5 transform rounded-full bg-surface-container-lowest shadow ring-0 transition duration-200 ease-in-out my-0.5"></span>
+</button>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">
+                  Terkunci
+                </span>
+</div>
+</td>
+<td class="py-4 px-space-md text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1.5 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-sm hover:bg-surface-tint transition-all" onclick="quickGiftPromo('Bapak Budi Santoso', 'budi.santoso@gmail.com')">
+                  Aktifkan Promo
+                </button>
+<button class="p-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors" onclick="openDrawer('Bapak Budi Santoso', 'budi.santoso@gmail.com', 'Aisyah (7 thn)', [])" title="Buka Detail">
+<span class="material-symbols-outlined text-[19px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Bunda Farida Nur (Manual Activation CS) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest flex items-center justify-center font-headline-sm text-headline-sm text-primary font-bold shadow-sm">
+                  FN
+                </div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-bold">Bunda Farida Nur</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-primary font-label-sm text-[10px] font-bold">CS OVERRIDE</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-tertiary">face</span>
+<span>Anak: <strong class="text-on-surface">Fatih (5 thn)</strong></span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md font-body-sm text-body-sm">
+<div class="text-on-surface">farida.nur@gmail.com</div>
+<div class="flex items-center gap-1 text-on-surface-variant text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">chat</span>
+<span>0819-0011-2233</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-wrap gap-1.5 max-w-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-high text-primary font-label-sm text-[11px] font-bold shadow-sm">
+<span class="material-symbols-outlined text-[13px]">auto_stories</span>
+                  Kisah 25 Nabi
+                </span>
+</div>
+<span class="font-label-sm text-[11px] text-primary block mt-1 font-semibold">Diaktivasi Manual oleh CS Budi</span>
+</td>
+<td class="py-4 px-space-md">
+<span class="font-label-md text-label-md text-on-surface font-bold">Rp 25.000</span>
+<span class="font-label-sm text-[11px] text-secondary block font-semibold">Bukti TF Bank Valid</span>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-2">
+<button aria-checked="true" class="relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full bg-secondary transition-colors duration-200 ease-in-out focus:outline-none" onclick="toggleAccess(this)" role="switch">
+<span class="translate-x-5 inline-block h-5 w-5 transform rounded-full bg-surface-container-lowest shadow ring-0 transition duration-200 ease-in-out my-0.5"></span>
+</button>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Akses Manual
+                </span>
+</div>
+</td>
+<td class="py-4 px-space-md text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-2 rounded-xl bg-surface-container-low text-primary hover:bg-surface-container-high transition-colors" onclick="openDrawer('Bunda Farida Nur', 'farida.nur@gmail.com', 'Fatih (5 thn)', ['Kisah 25 Nabi'])" title="Detail Hak Akses">
+<span class="material-symbols-outlined text-[19px]">tune</span>
+</button>
+<button class="p-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors" onclick="showQuickToast('Link reset password terkirim via WhatsApp!')" title="Kirim Reset Password">
+<span class="material-symbols-outlined text-[19px]">lock_reset</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination -->
+<div class="px-space-md py-3.5 bg-surface-container-low/50 flex flex-col sm:flex-row items-center justify-between gap-space-sm border-t border-surface-container">
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span>Menampilkan <strong>1 - 5</strong> dari <strong>1,420</strong> pelanggan terdaftar</span>
+<span class="hidden md:inline text-outline">•</span>
+<span class="hidden md:inline">Per halaman: 5 baris</span>
+</div>
+<!-- Pagination Buttons -->
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:bg-surface-container-high disabled:opacity-40 transition-colors" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-sm">
+          1
+        </button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors">
+          2
+        </button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors">
+          3
+        </button>
+<span class="px-1 text-outline font-label-sm">...</span>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors">
+          142
+        </button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bottom Interactive Card: Gift Promo & Fast Bulk Grant -->
+<div class="mt-space-lg rounded-2xl bg-gradient-to-r from-surface-container to-surface-container-high p-space-lg shadow-sm border-b-4 border-surface-container-highest flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-2xl bg-tertiary text-on-tertiary flex items-center justify-center shadow-sm shrink-0 border-b-4 border-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[30px]">card_giftcard</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Aktivasi Instan &amp; Gift Akses Promo</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[11px] font-bold">Fast CS Tool</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Ada wali murid yang konfirmasi transfer lewat WhatsApp atau butuh kartu complimentary untuk review pengajar? Buka akses serial dengan 1 klik tanpa menunggu payment gateway.
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 w-full md:w-auto">
+<button class="w-full md:w-auto px-space-md py-3 rounded-xl bg-surface-container-lowest text-primary font-label-md text-label-md border-b-4 border-surface-container-highest hover:bg-surface-container-low shadow-sm active:translate-y-1 active:border-b-0 transition-all text-center" onclick="document.getElementById('addCustomerModal').classList.remove('hidden')">
+        Buka Form Tambah &amp; Beri Akses
+      </button>
+</div>
+</div>
+<!-- Slide-out Drawer: Kelola Hak Akses Spesifik -->
+<div aria-labelledby="slide-over-title" aria-modal="true" class="fixed inset-0 z-50 overflow-hidden hidden" id="accessDrawer" role="dialog">
+<!-- Backdrop -->
+<div class="fixed inset-0 bg-on-background/40 backdrop-blur-sm transition-opacity" onclick="closeDrawer()"></div>
+<div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+<div class="w-screen max-w-md bg-surface-container-lowest shadow-2xl flex flex-col justify-between">
+<!-- Drawer Header -->
+<div class="p-space-lg bg-surface-container-low border-b border-surface-container">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Panel Konfigurasi Akses</span>
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" onclick="closeDrawer()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface" id="drawerCustomerName">Bunda Siti Rahmawati</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="drawerCustomerMeta">bunda.siti@gmail.com • Arkan (5 thn)</p>
+</div>
+<!-- Drawer Content: Flashcard Series Access Matrix -->
+<div class="p-space-lg overflow-y-auto flex-1 space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">Katalog Seri Flashcard</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Live Realtime Sync</span>
+</div>
+<!-- Card Option 1: Kisah 25 Nabi -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[22px]">auto_stories</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block">Kisah 25 Nabi</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">25 Kartu Cerita &amp; Kuis</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" onchange="showQuickToast('Akses serial telah diperbarui!')" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Card Option 2: Pola Bentuk & Logika -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">shapes</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block">Pola Bentuk &amp; Logika</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">30 Kartu Kognitif Balita</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" onchange="showQuickToast('Akses serial telah diperbarui!')" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Card Option 3: Adab & Karakter Baik -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[22px]">favorite</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block">Adab &amp; Karakter Baik</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">20 Kartu Kebiasaan Positif</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" onchange="showQuickToast('Akses serial telah diperbarui!')" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Card Option 4: Sahabat Cilik -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[22px]">diversity_1</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block">Kisah Sahabat Cilik</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">15 Kartu Keteladanan</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" onchange="showQuickToast('Akses serial telah diperbarui!')" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Quick Security Actions -->
+<div class="pt-space-md border-t border-surface-container space-y-2">
+<span class="font-label-sm text-label-sm text-outline font-bold uppercase tracking-wider">Aksi Keamanan Wali</span>
+<button class="w-full py-2.5 px-space-md rounded-xl bg-surface-container-low text-on-surface font-label-sm text-label-sm flex items-center justify-between hover:bg-surface-container-high transition-colors" onclick="showQuickToast('Password berhasil di-reset. PIN sementara: 123456'); closeDrawer();">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">key</span>
+                Reset PIN Akses Anak / Orang Tua
+              </span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+<button class="w-full py-2.5 px-space-md rounded-xl bg-surface-container-low text-error font-label-sm text-label-sm flex items-center justify-between hover:bg-error-container hover:text-on-error-container transition-colors" onclick="showQuickToast('Seluruh sesi login perangkat wali telah dikeluarkan!'); closeDrawer();">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">logout</span>
+                Force Logout Semua Device Anak
+              </span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Drawer Footer -->
+<div class="p-space-md bg-surface-container-low border-t border-surface-container flex items-center gap-space-sm">
+<button class="flex-1 py-3 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" onclick="closeDrawer()">
+            Tutup
+          </button>
+<button class="flex-1 py-3 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-md border-b-4 border-on-primary-fixed-variant active:translate-y-0.5 transition-all" onclick="showQuickToast('Hak akses berhasil disimpan!'); closeDrawer();">
+            Simpan Perubahan
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal: Tambah Akun Pelanggan Manual -->
+<div aria-labelledby="modal-title" aria-modal="true" class="fixed inset-0 z-50 overflow-y-auto hidden" id="addCustomerModal" role="dialog">
+<div class="flex items-center justify-center min-h-screen px-4 py-8 text-center sm:block sm:p-0">
+<div class="fixed inset-0 bg-on-background/40 backdrop-blur-sm transition-opacity" onclick="document.getElementById('addCustomerModal').classList.add('hidden')"></div>
+<span aria-hidden="true" class="hidden sm:inline-block sm:align-middle sm:h-screen">​</span>
+<div class="inline-block align-bottom bg-surface-container-lowest rounded-2xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full border-b-4 border-surface-container-high">
+<div class="p-space-lg">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Tambah Akun Pelanggan Baru</h3>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="document.getElementById('addCustomerModal').classList.add('hidden')">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<form class="space-y-space-md" onsubmit="handleManualAdd(event)">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 font-semibold">Nama Lengkap Orang Tua / Wali *</label>
+<input class="w-full px-3.5 py-2.5 bg-surface-container-low rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest shadow-sm" placeholder="Contoh: Bunda Sarah Annisa" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 font-semibold">Email Aktif *</label>
+<input class="w-full px-3.5 py-2.5 bg-surface-container-low rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest shadow-sm" placeholder="sarah@example.com" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 font-semibold">No. WhatsApp *</label>
+<input class="w-full px-3.5 py-2.5 bg-surface-container-low rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest shadow-sm" placeholder="0812-xxxx-xxxx" required="" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 font-semibold">Nama Panggilan Anak</label>
+<input class="w-full px-3.5 py-2.5 bg-surface-container-low rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest shadow-sm" placeholder="Contoh: Alif" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 font-semibold">Usia Anak</label>
+<select class="w-full px-3.5 py-2.5 bg-surface-container-low rounded-xl font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-sm">
+<option>3 Tahun</option>
+<option>4 Tahun</option>
+<option selected="">5 Tahun</option>
+<option>6 Tahun</option>
+<option>7+ Tahun</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2 font-semibold">Pilih Serial Kartu yang Langsung Diaktifkan:</label>
+<div class="grid grid-cols-2 gap-2 text-left">
+<label class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container-high transition-colors">
+<input checked="" class="rounded text-primary" type="checkbox"/>
+<span class="font-label-sm text-label-sm text-on-surface">Kisah 25 Nabi</span>
+</label>
+<label class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container-high transition-colors">
+<input class="rounded text-primary" type="checkbox"/>
+<span class="font-label-sm text-label-sm text-on-surface">Adab &amp; Karakter</span>
+</label>
+<label class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container-high transition-colors">
+<input class="rounded text-primary" type="checkbox"/>
+<span class="font-label-sm text-label-sm text-on-surface">Pola &amp; Logika</span>
+</label>
+<label class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container-high transition-colors">
+<input class="rounded text-primary" type="checkbox"/>
+<span class="font-label-sm text-label-sm text-on-surface">Sahabat Cilik</span>
+</label>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container text-on-surface-variant font-body-sm text-[13px] flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">mark_email_read</span>
+<span>Kredensial login &amp; link aplikasi akan otomatis dikirimkan via WhatsApp ke nomor wali.</span>
+</div>
+<div class="pt-space-sm flex items-center justify-end gap-space-sm">
+<button class="px-space-md py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" onclick="document.getElementById('addCustomerModal').classList.add('hidden')" type="button">
+                Batal
+              </button>
+<button class="px-space-md py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-md border-b-4 border-on-primary-fixed-variant active:translate-y-0.5 transition-all" type="submit">
+                Simpan &amp; Aktifkan Akses
+              </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<!-- Toast Notification Notification Bar -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="quickToast">
+<div class="flex items-center gap-3 px-space-md py-3 rounded-2xl bg-inverse-surface text-inverse-on-surface shadow-2xl border-b-4 border-black/40">
+<span class="material-symbols-outlined text-secondary text-[22px]">check_circle</span>
+<span class="font-label-md text-label-md" id="toastMessage">Aksi berhasil disimpan!</span>
+</div>
+</div>
+</div>
+<script>
+  // Simple toast trigger
+  function showQuickToast(msg) {
+    const toast = document.getElementById('quickToast');
+    const toastMsg = document.getElementById('toastMessage');
+    toastMsg.innerText = msg;
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3200);
+  }
+
+  // Toggle switch UI handler
+  function toggleAccess(button) {
+    const isChecked = button.getAttribute('aria-checked') === 'true';
+    const thumb = button.querySelector('span');
+    const statusBadge = button.nextElementSibling;
+
+    if (isChecked) {
+      button.setAttribute('aria-checked', 'false');
+      button.classList.remove('bg-secondary');
+      button.classList.add('bg-outline-variant');
+      thumb.classList.remove('translate-x-5');
+      thumb.classList.add('translate-x-1');
+      if (statusBadge) {
+        statusBadge.className = 'inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold';
+        statusBadge.innerHTML = 'Terkunci Sementara';
+      }
+      showQuickToast('Akses flashcard ditangguhkan sementara.');
+    } else {
+      button.setAttribute('aria-checked', 'true');
+      button.classList.add('bg-secondary');
+      button.classList.remove('bg-outline-variant');
+      thumb.classList.add('translate-x-5');
+      thumb.classList.remove('translate-x-1');
+      if (statusBadge) {
+        statusBadge.className = 'inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold';
+        statusBadge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Akses Penuh';
+      }
+      showQuickToast('Hak akses kartu berhasil dibuka & diaktifkan.');
+    }
+  }
+
+  // Side Drawer Operations
+  function openDrawer(name, email, child, cards) {
+    document.getElementById('drawerCustomerName').innerText = name;
+    document.getElementById('drawerCustomerMeta').innerText = email + ' • ' + child;
+    document.getElementById('accessDrawer').classList.remove('hidden');
+  }
+
+  function closeDrawer() {
+    document.getElementById('accessDrawer').classList.add('hidden');
+  }
+
+  // Fast promo activation modal helper
+  function quickGiftPromo(name, email) {
+    showQuickToast('Promo Gratis Kisah 25 Nabi aktif untuk ' + name + '!');
+  }
+
+  // Handle Add Customer Form
+  function handleManualAdd(e) {
+    e.preventDefault();
+    document.getElementById('addCustomerModal').classList.add('hidden');
+    showQuickToast('Akun pelanggan berhasil ditambahkan dan akses kartu aktif!');
+    e.target.reset();
+  }
+
+  // Filter actions simulation
+  function resetFilters() {
+    document.getElementById('searchInput').value = '';
+    document.getElementById('statusFilter').value = 'all';
+    document.getElementById('seriesFilter').value = 'all';
+    showQuickToast('Filter telah direset ke bawaan.');
+  }
+
+  function filterStatus(status) {
+    document.getElementById('statusFilter').value = status;
+    showQuickToast('Menampilkan pelanggan menunggu verifikasi manual.');
+  }
+</script></main></div></body></html>

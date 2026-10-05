@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f9f9ff;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-variant": "#d6e3ff", "error": "#ba1a1a", "tertiary": "#7c5800", "inverse-surface": "#233149", "inverse-primary": "#a9c7ff", "primary-fixed-dim": "#a9c7ff", "surface-container-high": "#dfe8ff", "inverse-on-surface": "#ecf0ff", "on-tertiary-container": "#402c00", "secondary": "#006e29", "on-primary-fixed": "#001b3e", "on-surface": "#0d1c33", "tertiary-container": "#c48d00", "background": "#f9f9ff", "on-secondary-fixed-variant": "#00531d", "on-background": "#0d1c33", "on-tertiary-fixed-variant": "#5e4200", "on-surface-variant": "#414753", "outline-variant": "#c1c6d5", "tertiary-fixed": "#ffdea8", "on-error-container": "#93000a", "on-secondary": "#ffffff", "on-tertiary-fixed": "#271900", "surface-container-lowest": "#ffffff", "surface-bright": "#f9f9ff", "surface-tint": "#005db8", "surface-container": "#e8eeff", "surface": "#f9f9ff", "surface-container-highest": "#d6e3ff", "secondary-container": "#93f59c", "error-container": "#ffdad6", "surface-dim": "#ccdaf9", "primary-container": "#4d96ff", "on-secondary-container": "#00732b", "primary": "#005db8", "tertiary-fixed-dim": "#ffba20", "on-secondary-fixed": "#002107", "surface-container-low": "#f0f3ff", "on-tertiary": "#ffffff", "on-primary": "#ffffff", "on-error": "#ffffff", "on-primary-fixed-variant": "#00468c", "primary-fixed": "#d6e3ff", "outline": "#727784", "on-primary-container": "#002e61", "secondary-fixed-dim": "#7bdb85", "secondary-fixed": "#96f89f" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-desktop": "3rem", "gutter-tablet": "1.5rem", "gutter": "1rem", "space-xs": "0.25rem", "gutter-desktop": "2rem", "space-lg": "1.5rem", "margin": "1.25rem", "space-xl": "2.5rem", "margin-tablet": "2rem", "space-sm": "0.5rem", "space-md": "1rem" }, fontFamily: { "display": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-md": ["Be Vietnam Pro"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Be Vietnam Pro"], "body-sm": ["Be Vietnam Pro"], "headline-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"] }, fontSize: { "display": ["3rem", { lineHeight: "3.5rem", letterSpacing: "-0.02em", fontWeight: "800" }], "label-md": ["0.875rem", { lineHeight: "1.125rem", letterSpacing: "0.02em", fontWeight: "700" }], "headline-lg": ["2rem", { lineHeight: "2.5rem", letterSpacing: "-0.01em", fontWeight: "700" }], "label-sm": ["0.75rem", { lineHeight: "1rem", letterSpacing: "0.03em", fontWeight: "600" }], "body-md": ["1rem", { lineHeight: "1.5rem", fontWeight: "400" }], "headline-lg-mobile": ["1.625rem", { lineHeight: "2.125rem", letterSpacing: "-0.01em", fontWeight: "700" }], "headline-md": ["1.5rem", { lineHeight: "2rem", fontWeight: "700" }], "body-lg": ["1.125rem", { lineHeight: "1.75rem", fontWeight: "500" }], "body-sm": ["0.875rem", { lineHeight: "1.375rem", fontWeight: "400" }], "headline-sm": ["1.25rem", { lineHeight: "1.75rem", fontWeight: "600" }], "label-lg": ["1rem", { lineHeight: "1.25rem", letterSpacing: "0.01em", fontWeight: "700" }] } } } }</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary-fixed flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[22px]">toys</span></div><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Dashboard Orang Tua</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface px-margin"><div class="flex flex-col w-full pb-8">
+<!-- Parent Header & Child Switcher -->
+<section class="bg-surface-container-low rounded-3xl p-space-md mb-space-md shadow-sm">
+<div class="flex items-center justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+          Parental Gate Aktif
+        </span>
+</div>
+<button aria-label="Pengaturan Orang Tua" class="w-10 h-10 rounded-2xl bg-surface-container-highest text-on-surface-variant flex items-center justify-center hover:bg-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">lock_reset</span>
+</button>
+</div>
+<div class="flex flex-col gap-1 mb-space-md">
+<h1 class="font-headline-sm text-headline-sm text-on-surface">Selamat Datang, Bunda Siti 👋</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pantau capaian dan ritme eksplorasi belajar ananda tercinta dengan tenang.</p>
+</div>
+<!-- Active Child Profile Selector -->
+<div class="flex items-center justify-between bg-surface-container-lowest rounded-2xl p-space-sm shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-12 h-12 rounded-2xl overflow-hidden bg-primary-fixed flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Cute lion cartoon avatar for kids educational dashboard profile icon wearing playful glasses, scandinavian clean illustration style, soft mint and blue palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1he8Y_QJfUwlqRMAa-5QwSLo6QFoBZdXodpGWPYxGZIIf76GP7A8jeidv3P9pM9sKzZQpgql0ZLLmgF_CFxnGKNAneQ9-pgiPQLt9orbzv_NHRDzx0JIuRQQYzPy2150TI7qZ23y0IdNfpN_1-hR8vlZudW2txtuTf2wdAfxn0US7rZArLnvyrE2NXzOy0L4fEzsXekUBaCKY9Vr3KYjNIaEG0cSakljop9wMVlm2fo59jH1_gqszgw"/>
+</div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Memonitor</p>
+<p class="font-label-lg text-label-lg text-on-surface truncate">Arkan <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">(5 Tahun)</span></p>
+</div>
+</div>
+<button class="inline-flex items-center gap-1 px-3 py-2 rounded-xl bg-surface-container text-primary font-label-sm text-label-sm hover:bg-surface-variant transition-colors" type="button">
+<span>Ganti Profil</span>
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+</div>
+</section>
+<!-- Weekly Learning Summary Hero Cards -->
+<section class="mb-space-lg">
+<div class="flex items-center justify-between mb-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Rangkuman Pekan Ini</h2>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+        7 Hari Terakhir
+      </span>
+</div>
+<!-- Bento Grid Summary -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Total Learning Time -->
+<div class="col-span-2 bg-gradient-to-br from-primary to-primary-container rounded-3xl p-space-md text-on-primary shadow-sm relative overflow-hidden">
+<div class="relative z-10 flex items-start justify-between">
+<div>
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-on-primary/15 text-on-primary font-label-sm text-label-sm mb-2">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+              Durasi Menyimak
+            </div>
+<p class="font-headline-lg-mobile text-headline-lg-mobile font-bold tracking-tight">1 Jam 45 Menit</p>
+<p class="font-body-sm text-body-sm text-on-primary/90 mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>Naik 25% dari minggu lalu</span>
+</p>
+</div>
+<div class="w-12 h-12 rounded-2xl bg-on-primary/15 flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[28px]">headset</span>
+</div>
+</div>
+<!-- Decorative Ambient Graphic -->
+<svg class="absolute -right-4 -bottom-4 w-32 h-32 opacity-15 text-surface-container-lowest" fill="currentColor" viewbox="0 0 100 100">
+<circle cx="50" cy="50" r="45"></circle>
+</svg>
+</div>
+<!-- Topics Completed -->
+<div class="bg-surface-container-lowest rounded-3xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="w-10 h-10 rounded-2xl bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+</span>
+<span class="font-label-sm text-label-sm text-secondary">2 Kartu</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface">12 Topik</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tuntas dipelajari</p>
+</div>
+</div>
+<!-- Stars Earned -->
+<div class="bg-surface-container-lowest rounded-3xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="w-10 h-10 rounded-2xl bg-tertiary-fixed text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</span>
+<span class="font-label-sm text-label-sm text-tertiary">Pintar</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface">58 Bintang</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Terkumpul rapi</p>
+</div>
+</div>
+<!-- Learning Streak Banner -->
+<div class="col-span-2 bg-surface-container-lowest rounded-3xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-2xl bg-tertiary-fixed-dim/30 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">local_fire_department</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">5 Hari Berturut-turut</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Konsistensi Arkan luar biasa pekan ini!</p>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-variant"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-variant"></span>
+</div>
+</div>
+</div>
+</section>
+<!-- Learning Analytics & Style Insights -->
+<section class="mb-space-lg">
+<div class="flex items-center justify-between mb-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Analisis Cara Belajar</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Evaluasi Interaktif</span>
+</div>
+<div class="bg-surface-container-lowest rounded-3xl p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Accuracy Visual Bar Breakdown -->
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface">Akurasi Kuis Pemahaman</span>
+<span class="font-label-md text-label-md text-secondary">78% Mandiri</span>
+</div>
+<!-- Segmented Accuracy Bar -->
+<div class="h-4 w-full rounded-full bg-surface-container flex overflow-hidden p-0.5 gap-0.5">
+<div class="h-full bg-secondary rounded-full" style="width: 78%;" title="Mandiri 78%"></div>
+<div class="h-full bg-tertiary-fixed-dim rounded-full" style="width: 16%;" title="Dengan Bantuan 16%"></div>
+<div class="h-full bg-surface-variant rounded-full" style="width: 6%;" title="Perlu Diulang 6%"></div>
+</div>
+<!-- Legend Pills -->
+<div class="flex items-center justify-between mt-3 flex-wrap gap-2 text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Mandiri: <strong>78%</strong></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Didampingi: <strong>16%</strong></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-surface-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Ulang: <strong>6%</strong></span>
+</div>
+</div>
+</div>
+<!-- Strengths & Recommendations Notes -->
+<div class="flex flex-col gap-space-sm pt-2">
+<div class="p-space-sm bg-secondary-container/30 rounded-2xl flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Kekuatan Arkan</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Daya ingat narasi sangat baik saat mendengarkan kisah keteladanan (Serial Kisah Nabi).</p>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container rounded-2xl flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-xl bg-surface-variant text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Rekomendasi Latihan</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Latih pengenalan pola urutan &amp; analogi sederhana pada Kategori Nalar secara bertahap.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Card Deck Progress & Collection -->
+<section class="mb-space-lg">
+<div class="flex items-center justify-between mb-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Koleksi Kartu Belajar</h2>
+<span class="font-label-sm text-label-sm text-primary">Kelola Materi</span>
+</div>
+<!-- Category Filter Tabs -->
+<div class="flex gap-space-xs p-1 bg-surface-container rounded-2xl mb-space-md">
+<button class="flex-1 py-2.5 rounded-xl bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm text-center transition-all" id="tab-owned" onclick="switchCardTab('owned')" type="button">
+        Kartu Dimiliki (2)
+      </button>
+<button class="flex-1 py-2.5 rounded-xl text-on-surface-variant font-label-md text-label-md text-center transition-all hover:text-on-surface" id="tab-recom" onclick="switchCardTab('recom')" type="button">
+        Rekomendasi (3)
+      </button>
+</div>
+<!-- Active Owned Deck List -->
+<div class="flex flex-col gap-space-sm" id="deck-list-owned">
+<!-- Deck 1: Kisah 25 Nabi -->
+<div class="bg-surface-container-lowest rounded-3xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-16 h-16 rounded-2xl overflow-hidden bg-primary-fixed flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Playful illustration of a starry peaceful oasis desert scene for children islamic prophets stories, soft pastel colors, scandinavian aesthetic minimal book cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwFDa2czoY5pUySQWUhP1iBa_-XukdpX3TwtquzvuonjVzFjWXadOwFk-iAx0ubX0Lkkqem1jCkfki_kYJH_iONIR9pdwKU6rzYFvAMKDffecLTJETs9g9ap7J0h81d7alHQhIiIKdYqBK4EFdR25VrCXboO7VFsBCITU_EmI91tiWzt6lurqf2eAVoKtdS90BV0A241Y9jZzSsg8hmrQactM60AcrpFT8ftlHDkEctH2X-4NwXmguyA"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="px-2 py-0.5 rounded-md bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">SIMAK</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">• Audio Interaktif</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface truncate">Kisah 25 Nabi &amp; Rasul</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">8 dari 25 Topik Selesai</p>
+</div>
+<span class="font-label-lg text-label-lg text-primary font-bold">32%</span>
+</div>
+<!-- Progress Track -->
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 32%;"></div>
+</div>
+<button class="w-full py-3 rounded-2xl bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-primary/90 transition-transform active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+          Lanjutkan Mendampingi
+        </button>
+</div>
+<!-- Deck 2: Pola Bentuk & Logika -->
+<div class="bg-surface-container-lowest rounded-3xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-16 h-16 rounded-2xl overflow-hidden bg-secondary-container flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Geometric colorful blocks puzzle illustration in cheerful scandinavian minimal aesthetic, soft emerald mint and yellow educational wooden toys" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyExcggAMhUwApUXPTS2D8wZOnk_UwLK9T6er0LjpP52tY5bJ_Pwuxa_txqpAytvFl_T1cFLKBXlCe8RbHvPCHnukV8yTkIiL_S_c9BM-8weSSP6t6wXm0OpYpXFs3NVFKPMM4KVtiEONFOBvwGWPEk67p4Y3jdGGvNgI39LAqLCNqV83uIZO7aPAUTrUTlqLw66ZWLBVTPnEirogWgiUvJ-inz4XSl8tbMvvHyLdPPMToQD7Bltowiw"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">NALAR</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">• Logika Pola</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface truncate">Pola Bentuk &amp; Logika Dasar</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">4 dari 20 Topik Selesai</p>
+</div>
+<span class="font-label-lg text-label-lg text-secondary font-bold">20%</span>
+</div>
+<!-- Progress Track -->
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 20%;"></div>
+</div>
+<button class="w-full py-3 rounded-2xl bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-secondary/90 transition-transform active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+          Lanjutkan Mendampingi
+        </button>
+</div>
+</div>
+<!-- Recommendations Deck List (Hidden by default, toggled via JS) -->
+<div class="hidden flex-col gap-space-sm" id="deck-list-recom">
+<div class="bg-surface-container-lowest rounded-3xl p-space-md shadow-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-14 h-14 rounded-2xl overflow-hidden bg-tertiary-fixed flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Cute friendly animal characters sharing food and smiling, cheerful scandinavian moral story illustration for preschool kids" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8KfEltLeh-x1QvXAi48VMVCuPPeHFsAUlD7HsFwYGyO9CELviIFLpDskRM6nWJvkDlAdp1zT7x_X9F7TIypjSS81vIgDWzPkQc0OnR4qvVfqOeNFaSgVUFxrfDGHXUT5878wWR4QSlNBNnabbtWj_3rxJzJPbMXTuZ6l9369cweCabTz9plAfXBBPQ4UmAksuBByHhPUhBCHRm2Svs99P0AU1-z7UP1BF-Afeo921y3c7-eFtcKnFIw"/>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Kosakata Bahasa Arab Ceria</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">25 Topik • Audio Native</p>
+</div>
+</div>
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm flex-shrink-0" type="button">
+          Rp 25.000
+        </button>
+</div>
+<div class="bg-surface-container-lowest rounded-3xl p-space-md shadow-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-14 h-14 rounded-2xl overflow-hidden bg-surface-variant flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Science flashcards with sun moon stars earth scandinavian cartoon style educational card cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4d-x_2y0pSk5D5oEKn50tZBkSuf-1nxnLbjOsj5UVRI2uxiL1AKbhrXANcznbLNqyYPBZDFJcZUlR-gw6avOhKHWgBxcZWcFN2mv3-sYn31S6WBscZLfJRIQqUIxQKyhG3nL5C4uk1Au4iYQ9-KPS6T4cs-qbQA-KysK0X_kssHCPyqMMS8Hznhy92X57JRpMoOq81TYToRlEkgB-hUer_Nh2YTzqQVwKW9Br64ts99dq1knLe4KXZg"/>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Eksplorasi Alam Semesta</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">18 Topik • Sains Ramah Anak</p>
+</div>
+</div>
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm flex-shrink-0" type="button">
+          Rp 25.000
+        </button>
+</div>
+</div>
+<!-- Featured Recommendation Banner -->
+<div class="mt-space-md rounded-3xl p-space-md bg-gradient-to-r from-tertiary-fixed to-tertiary-fixed-dim/50 flex items-center justify-between gap-space-sm shadow-sm">
+<div class="min-w-0">
+<span class="inline-block px-2 py-0.5 rounded-full bg-on-tertiary-fixed text-tertiary-fixed font-label-sm text-label-sm mb-1">
+          Terpopuler Usia 4-6
+        </span>
+<h3 class="font-label-lg text-label-lg text-on-tertiary-fixed truncate">Adab &amp; Karakter Baik</h3>
+<p class="font-body-sm text-body-sm text-on-tertiary-fixed-variant">20 Topik perilaku teladan harian</p>
+</div>
+<button class="px-4 py-3 rounded-2xl bg-tertiary text-on-tertiary font-label-md text-label-md whitespace-nowrap shadow-sm hover:opacity-90 active:scale-95 transition-all" type="button">
+        Beli Rp 25.000
+      </button>
+</div>
+</section>
+<!-- Parental Controls & Configuration Section -->
+<section class="mb-space-lg">
+<div class="flex items-center justify-between mb-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Kontrol &amp; Batas Belajar</h2>
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+</div>
+<div class="bg-surface-container-lowest rounded-3xl p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Screen Time Toggle -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-2xl bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">timer</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Batas Layar Harian</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Otomatis jeda setelah 30 Menit/hari</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="toggle-screen-time" type="checkbox"/>
+<div class="w-12 h-7 bg-surface-variant rounded-full peer peer-checked:after:translate-x-5 peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-1 after:left-1 after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Oral vs Quiz mode toggle -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-2xl bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">record_voice_over</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Mode Tanya Jawab Lisan</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Utamakan dialog langsung orang tua-anak</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="toggle-voice-mode" type="checkbox"/>
+<div class="w-12 h-7 bg-surface-variant rounded-full peer peer-checked:after:translate-x-5 peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-1 after:left-1 after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</section>
+<!-- Export Report & Security Action Buttons -->
+<section class="flex flex-col gap-space-sm">
+<button class="w-full py-4 rounded-2xl bg-surface-container-lowest text-primary font-label-lg text-label-lg shadow-sm flex items-center justify-center gap-2 hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+      Unduh Rapor Belajar Anak (PDF)
+    </button>
+<button class="w-full py-4 rounded-2xl bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">manage_accounts</span>
+      Pengaturan Akun &amp; Kata Sandi
+    </button>
+</section>
+</div>
+<script>
+  function switchCardTab(tabName) {
+    const ownedTab = document.getElementById('tab-owned');
+    const recomTab = document.getElementById('tab-recom');
+    const ownedList = document.getElementById('deck-list-owned');
+    const recomList = document.getElementById('deck-list-recom');
+
+    if (tabName === 'owned') {
+      ownedTab.className = "flex-1 py-2.5 rounded-xl bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm text-center transition-all";
+      recomTab.className = "flex-1 py-2.5 rounded-xl text-on-surface-variant font-label-md text-label-md text-center transition-all hover:text-on-surface";
+      ownedList.classList.remove('hidden');
+      ownedList.classList.add('flex');
+      recomList.classList.add('hidden');
+      recomList.classList.remove('flex');
+    } else {
+      recomTab.className = "flex-1 py-2.5 rounded-xl bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm text-center transition-all";
+      ownedTab.className = "flex-1 py-2.5 rounded-xl text-on-surface-variant font-label-md text-label-md text-center transition-all hover:text-on-surface";
+      recomList.classList.remove('hidden');
+      recomList.classList.add('flex');
+      ownedList.classList.add('hidden');
+      ownedList.classList.remove('flex');
+    }
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(36,50,74,0.06)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-20 px-space-sm"><a class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 text-on-surface-variant hover:text-on-surface transition-colors" data-path="katalog-kartu" href="#"><span class="material-symbols-outlined text-[24px]">dashboard</span><span class="font-label-sm text-label-sm">Koleksi</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 transition-colors text-primary font-bold" data-path="dashboard-orang-tua" href="#"><span class="material-symbols-outlined text-[24px]">query_stats</span><span class="font-label-sm text-label-sm">Progres</span></a><a class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 text-on-surface-variant hover:text-on-surface transition-colors" data-path="profil-anak" href="#"><span class="material-symbols-outlined text-[24px]">face</span><span class="font-label-sm text-label-sm">Profil</span></a></div></nav></body></html>

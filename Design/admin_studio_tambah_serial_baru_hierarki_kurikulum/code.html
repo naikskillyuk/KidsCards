@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#414753", "error": "#ba1a1a", "on-secondary-container": "#00732b", "secondary-container": "#93f59c", "primary-container": "#4d96ff", "surface-container-highest": "#d6e3ff", "surface-variant": "#d6e3ff", "surface-tint": "#005db8", "on-tertiary": "#ffffff", "on-background": "#0d1c33", "on-tertiary-fixed-variant": "#5e4200", "tertiary-container": "#c48d00", "surface-container-lowest": "#ffffff", "on-primary-fixed-variant": "#00468c", "inverse-primary": "#a9c7ff", "primary-fixed": "#d6e3ff", "inverse-surface": "#233149", "surface-container-low": "#f0f3ff", "on-tertiary-fixed": "#271900", "on-secondary-fixed-variant": "#00531d", "on-primary": "#ffffff", "on-error-container": "#93000a", "on-primary-container": "#002e61", "secondary-fixed-dim": "#7bdb85", "on-error": "#ffffff", "on-secondary-fixed": "#002107", "on-surface": "#0d1c33", "primary-fixed-dim": "#a9c7ff", "surface-bright": "#f9f9ff", "on-tertiary-container": "#402c00", "tertiary-fixed": "#ffdea8", "tertiary": "#7c5800", "on-primary-fixed": "#001b3e", "background": "#f9f9ff", "surface-container": "#e8eeff", "tertiary-fixed-dim": "#ffba20", "secondary": "#006e29", "surface-container-high": "#dfe8ff", "surface": "#f9f9ff", "error-container": "#ffdad6", "surface-dim": "#ccdaf9", "secondary-fixed": "#96f89f", "inverse-on-surface": "#ecf0ff", "outline-variant": "#c1c6d5", "on-secondary": "#ffffff", "outline": "#727784", "primary": "#005db8" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2.5rem", "space-md": "1rem", "margin": "1.25rem", "space-xs": "0.25rem", "gutter-desktop": "2rem", "space-lg": "1.5rem", "margin-desktop": "3rem", "space-sm": "0.5rem", "gutter": "1rem", "gutter-tablet": "1.5rem", "margin-tablet": "2rem" }, "fontFamily": { "display": [ "Plus Jakarta Sans" ], "headline-md": [ "Plus Jakarta Sans" ], "body-lg": [ "Be Vietnam Pro" ], "headline-sm": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Plus Jakarta Sans" ], "headline-lg": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "body-sm": [ "Be Vietnam Pro" ], "body-md": [ "Be Vietnam Pro" ], "label-lg": [ "Plus Jakarta Sans" ] }, "fontSize": { "display": [ "3rem", { "lineHeight": "3.5rem", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "headline-md": [ "1.5rem", { "lineHeight": "2rem", "fontWeight": "700" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.75rem", "fontWeight": "500" } ], "headline-sm": [ "1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" } ], "headline-lg-mobile": [ "1.625rem", { "lineHeight": "2.125rem", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg": [ "2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "label-md": [ "0.875rem", { "lineHeight": "1.125rem", "letterSpacing": "0.02em", "fontWeight": "700" } ], "label-sm": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.03em", "fontWeight": "600" } ], "body-sm": [ "0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" } ], "body-md": [ "1rem", { "lineHeight": "1.5rem", "fontWeight": "400" } ], "label-lg": [ "1rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "700" } ] } } } }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><img alt="Cute friendly cheerful owl mascot holding a colorful flashcard, modern flat vector logo icon for kids flashcard learning app, warm yellow, sky blue, and vibrant accents, clean rounded shapes, child-friendly, sticker aesthetic, white background. Design context: - Primary color: #4d96ff - Font: plusJakartaSans - Mode: light - Roundness: rounded-md . The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U8iTfW9QBQf7h1b9TWymhZyGdWJi6PZhDoqCMngPEjVbIwIg__RuUgPUOHWFybiAxRaol1vb2U7RW_UffctJgB0x6Hv1xa31g9DvBIwn9S-HWR-1EfEOs4zaLDAqAatrwmCLu3GDMm-XTBiBzNNP_4tnCJqEAk-KdluIS5DgnFecM3cGsuw5vAoPYeW5jyUbDCIWY9u3DypofFmd22leYKsfLtVekoFM8wv1mYdNHqvwX6cpxbKcRGKPjS"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">Flashcard Kids</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-space-xs">Admin Portal</span></div></div><nav class="px-space-md py-space-md flex flex-col gap-space-sm" data-active-classes="bg-surface-container-highest text-primary font-bold rounded-xl"><div class="px-space-sm pt-space-xs pb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Overview</span></div><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard-utama" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard Utama</span></a><div class="px-space-sm pt-space-md pb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Pelanggan &amp; Transaksi</span></div><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="kelola-pelanggan-dan-akses" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span>Kelola Pelanggan &amp; Akses</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="verifikasi-pembayaran-transaksi" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Verifikasi Pembayaran</span></div><span class="bg-error text-on-error font-label-sm text-label-sm px-2 py-0.5 rounded-full">3</span></a><div class="px-space-sm pt-space-md pb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Manajemen Konten</span></div><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="kelola-materi-dan-topik" href="#"><span class="material-symbols-outlined text-[20px]">auto_stories</span><span>Kelola Materi &amp; Serial</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="bank-pertanyaan-kuis" href="#"><span class="material-symbols-outlined text-[20px]">quiz</span><span>Bank Pertanyaan Kuis</span></a><div class="px-space-sm pt-space-md pb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Pengaturan</span></div><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pengaturan-akun-staf" href="#"><span class="material-symbols-outlined text-[20px]">manage_accounts</span><span>Pengaturan Akun &amp; Staf</span></a></nav></div><div class="p-space-md m-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.03)] flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">Status Server</span><span class="h-2 w-2 rounded-full bg-secondary"></span></div><p class="font-body-sm text-body-sm text-on-surface">Payment Gateway Sync</p><div class="w-full bg-surface-container-high rounded-full h-1.5 mt-1"><div class="bg-secondary h-1.5 rounded-full w-full"></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="hidden lg:flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">home</span><span>/</span><span class="text-primary font-bold">Flashcard Admin</span></div><div class="relative flex-1"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-4 py-2 bg-surface-container-low rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.02)] transition-all" placeholder="Cari pelanggan, transaksi ID, kartu..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold"><span class="h-2 w-2 rounded-full bg-secondary"></span><span>Sistem QRIS/VA Online</span></div><div class="relative"><button class="h-10 w-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button><span class="absolute top-2 right-2 h-2.5 w-2.5 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></div><div class="h-8 w-[1px] bg-surface-container-high"></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Budi Santoso</span><span class="font-label-sm text-label-sm text-primary font-semibold">Super Admin</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span></div></div></header><main class="relative pt-16 bg-background min-h-screen px-space-lg py-space-lg w-full"><div class="flex flex-col w-full relative">
+<!-- BACKGROUND MANAGEMENT STUDIO (Contextual Content behind Modal) -->
+<div class="w-full flex flex-col gap-space-lg select-none opacity-40 pointer-events-none filter blur-[1.5px] transition-all">
+<!-- Breadcrumb & Top Bar -->
+<div class="flex items-center justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm text-outline font-label-sm text-label-sm">
+<span>Kurikulum Master</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">Katalog Serial &amp; Kartu Belajar</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-extrabold tracking-tight">Manajemen Serial &amp; Materi Flashcard</h1>
+</div>
+<div class="flex items-center gap-space-md">
+<button class="flex items-center gap-space-sm px-4 py-2 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">tune</span> Filter Hierarki
+        </button>
+<button class="flex items-center gap-space-sm px-5 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-md">
+<span class="material-symbols-outlined text-[20px]">add</span> Tambah Serial Baru
+        </button>
+</div>
+</div>
+<!-- Quick Stats Grid in Backoffice -->
+<div class="grid grid-cols-4 gap-space-md">
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Total Serial Aktif</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">14 Serial</span>
+</div>
+<span class="p-3 rounded-full bg-secondary-container text-on-secondary-container material-symbols-outlined">auto_stories</span>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kartu Belajar Tersedia</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">88 Paket</span>
+</div>
+<span class="p-3 rounded-full bg-primary-fixed text-primary material-symbols-outlined">style</span>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bank Topik Soal</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">1.240 Soal</span>
+</div>
+<span class="p-3 rounded-full bg-surface-container-high text-on-surface material-symbols-outlined">quiz</span>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pengguna Aktif Bulan Ini</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">2.840 Anak</span>
+</div>
+<span class="p-3 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant material-symbols-outlined">sentiment_very_satisfied</span>
+</div>
+</div>
+<!-- Hierarchy Preview Table -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between border-b border-surface-container pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Hierarki Serial: SIMAK &amp; NALAR</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm">Versi 2.4</span>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-space-sm font-label-sm text-label-sm text-outline px-4 py-2 uppercase tracking-wider">
+<div class="col-span-1">No</div>
+<div class="col-span-4">Nama Serial &amp; Kode</div>
+<div class="col-span-2">Kategori Induk</div>
+<div class="col-span-2">Rentang Usia</div>
+<div class="col-span-1 text-center">Kartu</div>
+<div class="col-span-2 text-right">Status</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="grid grid-cols-12 gap-space-sm items-center px-4 py-3 bg-surface-container-low rounded-lg font-body-sm text-body-sm">
+<div class="col-span-1 font-bold text-on-surface">01</div>
+<div class="col-span-4 flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary font-bold">SN</div>
+<div class="flex flex-col">
+<span class="font-bold text-on-surface">Sains Cilik &amp; Jagat Raya</span>
+<span class="text-[11px] text-outline">SRL-NALAR-01</span>
+</div>
+</div>
+<div class="col-span-2">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">NALAR</span>
+</div>
+<div class="col-span-2 text-on-surface-variant font-medium">TK B (4-5 Th)</div>
+<div class="col-span-1 text-center font-bold text-on-surface">6 Kartu</div>
+<div class="col-span-2 text-right">
+<span class="px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">Aktif di Katalog</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- INTERACTIVE MODAL OVERLAY & POP-UP DIALOG -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-md sm:p-space-lg bg-inverse-surface/40 backdrop-blur-md overflow-y-auto" id="modal-container">
+<!-- Pop-up Card Container with tactile elevation & Scandinavian-inspired warm cream/butter tone -->
+<div class="relative w-full max-w-4xl my-auto bg-[#FFFDF5] text-on-surface rounded-2xl shadow-[0_20px_50px_rgba(26,38,57,0.18)] border-b-[6px] border-[#E8DFCA] overflow-hidden flex flex-col max-h-[92vh]">
+<!-- HEADER MODAL -->
+<div class="px-space-lg py-5 bg-[#FAF4E5] border-b-2 border-[#F0E6D0] flex items-start justify-between shrink-0">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-2xl bg-[#FFF2A0] text-[#7c5800] border-b-4 border-[#E2CE60] flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[28px]">folder_special</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface font-extrabold tracking-tight">Buat Serial Konten Baru</h2>
+<span class="px-2 py-0.5 rounded-full bg-[#7D9C65]/15 text-[#3d5e27] font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#7D9C65]"></span> Hierarki Master
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Serial adalah wadah tema kurikulum induk: <span class="font-semibold text-on-surface">Kategori ➔ SERIAL ➔ Kartu Belajar ➔ Topik &amp; Kuis</span>
+</p>
+</div>
+</div>
+<!-- Close / Escape Button -->
+<button aria-label="Tutup Dialog" class="w-9 h-9 rounded-xl bg-[#FFFDF5] text-on-surface-variant hover:text-error hover:bg-error-container/40 flex items-center justify-center transition-colors" id="close-modal-btn" type="button">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<!-- SCROLLABLE BODY FORM -->
+<form class="flex-1 overflow-y-auto p-space-lg space-y-space-lg text-on-surface" id="serial-form">
+<!-- BAGIAN 1: PILIH KATEGORI INDUK -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center gap-space-xs font-bold">
+<span class="w-5 h-5 rounded-full bg-[#7D9C65] text-white flex items-center justify-center text-[12px] font-bold">1</span>
+              Pilih Kategori Induk Flashcard
+            </label>
+<span class="font-label-sm text-label-sm text-outline">Wajib dipilih</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Radio Card 1: SIMAK -->
+<label class="cursor-pointer group relative">
+<input class="peer sr-only" name="parent_category" type="radio" value="SIMAK"/>
+<div class="p-space-md rounded-2xl bg-[#FFFDF5] border-2 border-[#EADFC7] peer-checked:border-[#7D9C65] peer-checked:bg-[#F3F8EE] peer-checked:shadow-sm transition-all duration-200 flex flex-col justify-between h-full gap-space-sm hover:bg-[#FAF4E5]">
+<div class="flex items-start justify-between">
+<div class="w-11 h-11 rounded-xl bg-surface-container-high text-primary flex items-center justify-center peer-checked:bg-[#7D9C65] peer-checked:text-white transition-colors">
+<span class="material-symbols-outlined text-[24px]">headphones</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-[11px] font-semibold">Audio &amp; Narasi</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface group-hover:text-primary transition-colors">SIMAK (Audio Cerita &amp; Karakter)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Menitikberatkan pada kemampuan daya ingat auditori, kosakata verbal, dan imajinasi naskah dongeng terarah.</p>
+</div>
+<div class="flex items-center gap-1.5 pt-2 text-[12px] font-semibold text-outline">
+<span class="material-symbols-outlined text-[16px]">record_voice_over</span> 100% Dukungan Voice-Over
+                </div>
+</div>
+</label>
+<!-- Radio Card 2: NALAR (Default Selected) -->
+<label class="cursor-pointer group relative">
+<input checked="" class="peer sr-only" name="parent_category" type="radio" value="NALAR"/>
+<div class="p-space-md rounded-2xl bg-[#F3F8EE] border-2 border-[#7D9C65] peer-checked:border-[#7D9C65] peer-checked:bg-[#F3F8EE] shadow-sm transition-all duration-200 flex flex-col justify-between h-full gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="w-11 h-11 rounded-xl bg-[#7D9C65] text-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[24px]">extension</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-[#7D9C65]/20 text-[#294217] text-[11px] font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Interaktif Visual Sequence
+                  </span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-label-lg text-label-lg font-bold text-[#1f3711]">NALAR (Logika &amp; Pola Bergambar)</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Fokus pada penalaran spasial, urutan peristiwa logis, problem solving sederhana, dan matematika dasar balita.</p>
+</div>
+<div class="flex items-center gap-1.5 pt-2 text-[12px] font-semibold text-[#3d5e27]">
+<span class="material-symbols-outlined text-[16px]">psychology</span> Eksplorasi Visual &amp; Kuis Sentuh
+                </div>
+</div>
+</label>
+</div>
+</section>
+<!-- BAGIAN 2: INFORMASI DASAR SERIAL -->
+<section class="flex flex-col gap-space-md pt-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center gap-space-xs font-bold">
+<span class="w-5 h-5 rounded-full bg-[#7D9C65] text-white flex items-center justify-center text-[12px] font-bold">2</span>
+            Informasi Dasar &amp; Detail Kurikulum Serial
+          </label>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Kode Serial Auto Generated -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Kode Serial</span>
+<span class="text-[11px] font-medium text-[#7D9C65] bg-[#7D9C65]/10 px-2 py-0.5 rounded-full">Otomatis</span>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">tag</span>
+<input class="w-full pl-9 pr-3 py-2.5 rounded-xl bg-[#F0EAD8] text-on-surface font-label-md text-label-md cursor-not-allowed select-all focus:outline-none" id="serial-code-input" readonly="" type="text" value="SRL-NALAR-03"/>
+</div>
+<span class="text-[11px] text-on-surface-variant">Prefix kategori NALAR + urutan slot tema rilis.</span>
+</div>
+<!-- Nama Serial -->
+<div class="md:col-span-2 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Nama Serial Konten <span class="text-error">*</span></span>
+<span class="text-[11px] text-outline">Maks. 50 Karakter</span>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">edit_note</span>
+<input class="w-full pl-9 pr-3 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-[0_1px_4px_rgba(0,0,0,0.04)] focus:outline-none focus:ring-2 focus:ring-[#7D9C65]" placeholder="Contoh: Sains Cilik &amp; Keajaiban Alam Sekitar" type="text" value="Sains Cilik &amp; Keajaiban Alam"/>
+</div>
+<span class="text-[11px] text-on-surface-variant">Judul yang tampil di menu utama aplikasi anak dan dashboard orang tua.</span>
+</div>
+</div>
+<!-- Deskripsi Serial untuk Orang Tua -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Deskripsi Edukatif (Panduan Orang Tua &amp; Guru)</span>
+<span class="text-[11px] text-outline">Maks. 250 Karakter</span>
+</div>
+<textarea class="w-full p-3 rounded-xl bg-surface-container-lowest text-on-surface font-body-sm text-body-sm shadow-[0_1px_4px_rgba(0,0,0,0.04)] focus:outline-none focus:ring-2 focus:ring-[#7D9C65] resize-none" placeholder="Jelaskan tujuan stimulasi serial ini bagi anak..." rows="3">Serial Sains Cilik mengajak anak menumbuhkan rasa ingin tahu ilmiah melalui observasi hewan, tumbuhan, dan siklus air dengan pendekatan visual berbasis logika urutan peristiwa.</textarea>
+</div>
+<!-- Target Rentang Usia Rekomendasi (Pills) -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Target Rentang Usia Rekomendasi</span>
+<div class="flex flex-wrap gap-space-sm" id="age-pills-container">
+<button class="age-pill px-4 py-2 rounded-xl text-label-sm font-label-sm font-semibold bg-surface-container-lowest text-on-surface shadow-sm hover:bg-[#FAF4E5] transition-all flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">child_care</span> PAUD / TK A (3 - 4 Th)
+              </button>
+<button class="age-pill px-4 py-2 rounded-xl text-label-sm font-label-sm font-bold bg-[#7D9C65] text-white shadow-sm transition-all flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">toys</span> TK B (4 - 5 Th)
+              </button>
+<button class="age-pill px-4 py-2 rounded-xl text-label-sm font-label-sm font-semibold bg-surface-container-lowest text-on-surface shadow-sm hover:bg-[#FAF4E5] transition-all flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">school</span> SD Awal (6 - 7 Th)
+              </button>
+<button class="age-pill px-4 py-2 rounded-xl text-label-sm font-label-sm font-semibold bg-surface-container-lowest text-on-surface shadow-sm hover:bg-[#FAF4E5] transition-all flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">family_restroom</span> Semua Usia (4 - 9+ Th)
+              </button>
+</div>
+</div>
+</section>
+<!-- BAGIAN 3: BRANDING & IDENTITAS VISUAL SERIAL -->
+<section class="flex flex-col gap-space-md pt-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center gap-space-xs font-bold">
+<span class="w-5 h-5 rounded-full bg-[#7D9C65] text-white flex items-center justify-center text-[12px] font-bold">3</span>
+            Branding &amp; Identitas Visual Serial
+          </label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Upload Sampul Serial / Badge Icon -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Badge Ikon / Sampul Serial (1:1 Aspect)</span>
+<div class="p-space-md bg-surface-container-lowest rounded-2xl shadow-sm flex items-center gap-space-md">
+<!-- Preview Thumbnail Slot -->
+<div class="relative w-20 h-20 rounded-2xl bg-[#FFF2A0] border-2 border-[#E8DFCA] shrink-0 overflow-hidden flex items-center justify-center shadow-inner group">
+<img class="w-full h-full object-cover" data-alt="Charming Scandinavian style flat vector badge illustration of a baby sprout and glowing solar magnifying glass, soft warm olive green and butter yellow colors, rounded sticker style child learning graphic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwO36AXdEYvU2rGYRBL7rDkhivech5_fi0qNyU_MrnCSSrC3xGj4j2uLO7YTFHhnqE8ctaM2qqRaYY4QztyJPDMdZIVYkJixJt8_qWMZWQYIPE9N-G23l75wYOEbsWCtYr4wzc7E8xWZcouaTevS8nMapqpz0JavffiGW7uZ-XfeeoDBf6Ak8WGR-9V0P4DUzq-y8hwCttSWI_C1WVwDT-MUmfH6SqZmMn6lxhPA0asOAcPfV96SnPAg"/>
+<div class="absolute inset-0 bg-inverse-surface/30 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity cursor-pointer">
+<span class="material-symbols-outlined text-white text-[20px]">cached</span>
+</div>
+</div>
+<!-- Drag and drop zone text -->
+<div class="flex flex-col justify-center gap-1">
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-1.5 rounded-lg bg-[#FAF4E5] text-on-surface hover:bg-[#F0E6D0] font-label-sm text-label-sm font-bold transition-colors" type="button">
+                      Pilih Berkas SVG/PNG
+                    </button>
+<span class="text-[11px] text-outline">atau seret ke sini</span>
+</div>
+<span class="text-[11px] text-on-surface-variant leading-tight">Maksimal 2 MB (Transparan PNG atau SVG vector resolusi 512x512px disarankan).</span>
+</div>
+</div>
+</div>
+<!-- Accent Color Picker (5 Pilihan Palet Ceria) -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Warna Identitas Serial (Background Card Trim)</span>
+<div class="p-space-md bg-surface-container-lowest rounded-2xl shadow-sm flex flex-col justify-between h-full gap-2">
+<div class="flex items-center justify-between" id="color-picker-group">
+<!-- Sage Olive Green (Selected) -->
+<label class="cursor-pointer flex flex-col items-center gap-1">
+<input checked="" class="sr-only peer" name="serial_color" type="radio" value="sage"/>
+<div class="w-9 h-9 rounded-full bg-[#7D9C65] peer-checked:ring-4 peer-checked:ring-[#7D9C65]/30 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-white text-[18px]">check</span>
+</div>
+<span class="text-[10px] font-semibold text-on-surface">Sage</span>
+</label>
+<!-- Terracotta Coral Red -->
+<label class="cursor-pointer flex flex-col items-center gap-1">
+<input class="sr-only peer" name="serial_color" type="radio" value="coral"/>
+<div class="w-9 h-9 rounded-full bg-[#B93636] peer-checked:ring-4 peer-checked:ring-[#B93636]/30 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-white text-[18px] opacity-0 peer-checked:opacity-100">check</span>
+</div>
+<span class="text-[10px] font-semibold text-on-surface">Terracotta</span>
+</label>
+<!-- Tangerine Orange -->
+<label class="cursor-pointer flex flex-col items-center gap-1">
+<input class="sr-only peer" name="serial_color" type="radio" value="tangerine"/>
+<div class="w-9 h-9 rounded-full bg-[#FF9C4C] peer-checked:ring-4 peer-checked:ring-[#FF9C4C]/30 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-white text-[18px] opacity-0 peer-checked:opacity-100">check</span>
+</div>
+<span class="text-[10px] font-semibold text-on-surface">Tangerine</span>
+</label>
+<!-- Butter Gold -->
+<label class="cursor-pointer flex flex-col items-center gap-1">
+<input class="sr-only peer" name="serial_color" type="radio" value="butter"/>
+<div class="w-9 h-9 rounded-full bg-[#FFD152] peer-checked:ring-4 peer-checked:ring-[#FFD152]/30 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-white text-[18px] opacity-0 peer-checked:opacity-100">check</span>
+</div>
+<span class="text-[10px] font-semibold text-on-surface">Butter</span>
+</label>
+<!-- Sky Blue -->
+<label class="cursor-pointer flex flex-col items-center gap-1">
+<input class="sr-only peer" name="serial_color" type="radio" value="sky"/>
+<div class="w-9 h-9 rounded-full bg-[#4D96FF] peer-checked:ring-4 peer-checked:ring-[#4D96FF]/30 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-white text-[18px] opacity-0 peer-checked:opacity-100">check</span>
+</div>
+<span class="text-[10px] font-semibold text-on-surface">Sky Blue</span>
+</label>
+</div>
+<div class="text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">palette</span>
+                  Warna ini menjadi tema header kuis saat anak membuka kartu pada serial ini.
+                </div>
+</div>
+</div>
+</div>
+</section>
+<!-- BAGIAN 4: PROYEKSI KARTU DI DALAM SERIAL -->
+<section class="p-space-md rounded-2xl bg-[#FFF2A0]/35 border border-[#E8DFCA] flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-[#FFF2A0] text-[#7c5800] flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">lightbulb</span>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-label-md text-label-md font-bold text-on-surface">Proyeksi Paket Kartu Belajar Mandiri</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Serial ini siap menampung paket <span class="font-bold text-on-surface">Kartu Belajar (Rp 25.000 / kartu dengan 10–25 topik soal per sesi)</span>. Anda dapat langsung mengunggah kartu perdana segera setelah serial terverifikasi dan tersimpan.
+            </p>
+</div>
+</section>
+<!-- BAGIAN 5: STATUS PUBLIKASI SERIAL -->
+<section class="p-space-md bg-surface-container-lowest rounded-2xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-[#7D9C65]/15 text-[#3d5e27] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">public</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Status Aksesibilitas Katalog</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tentukan apakah serial ini langsung dapat dibeli oleh orang tua atau disimpan internal.</span>
+</div>
+</div>
+<!-- Radio Switch / Segments -->
+<div class="flex items-center gap-1 p-1 bg-[#FAF4E5] rounded-xl">
+<label class="cursor-pointer">
+<input class="sr-only peer" name="publish_status" type="radio" value="draft"/>
+<span class="px-3 py-1.5 rounded-lg text-label-sm font-label-sm text-on-surface-variant peer-checked:bg-surface-container-lowest peer-checked:text-on-surface peer-checked:font-bold peer-checked:shadow-sm block transition-all">
+                Simpan Draf
+              </span>
+</label>
+<label class="cursor-pointer">
+<input checked="" class="sr-only peer" name="publish_status" type="radio" value="live"/>
+<span class="px-3 py-1.5 rounded-lg text-label-sm font-label-sm text-white bg-[#7D9C65] font-bold block shadow-sm transition-all">
+                Rilis ke Katalog
+              </span>
+</label>
+</div>
+</section>
+</form>
+<!-- FOOTER MODAL (ACTION BUTTONS) -->
+<div class="px-space-lg py-4 bg-[#FAF4E5] border-t-2 border-[#F0E6D0] flex flex-wrap items-center justify-between gap-space-md shrink-0">
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Perubahan tersinkronisasi dengan Firebase &amp; Payment Gateway</span>
+</div>
+<div class="flex items-center gap-space-sm ml-auto">
+<!-- Batal Button -->
+<button class="px-4 py-2.5 rounded-xl bg-transparent text-on-surface-variant hover:bg-[#F0E6D0] font-label-md text-label-md font-bold transition-colors" id="cancel-btn" type="button">
+            Batal
+          </button>
+<!-- Simpan Draf Button -->
+<button class="px-4 py-2.5 rounded-xl bg-[#FFFDF5] text-on-surface border-b-2 border-[#CBD5E1] hover:bg-[#F3EFE0] active:translate-y-0.5 font-label-md text-label-md font-bold transition-all shadow-sm" type="button">
+            Simpan Sebagai Draf
+          </button>
+<!-- Primary CTA Button (#FF9C4C Tangerine Orange Pop Style) -->
+<button class="px-5 py-2.5 rounded-xl bg-[#FF9C4C] hover:bg-[#f38a35] active:translate-y-1 text-white border-b-4 border-[#D97724] font-label-md text-label-md font-extrabold tracking-wide uppercase shadow-md flex items-center gap-2 transition-all" form="serial-form" type="submit">
+<span>Simpan &amp; Tambah Kartu Pertama</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Interactive micro-behavior for the modal
+  document.addEventListener('DOMContentLoaded', () => {
+    const modalContainer = document.getElementById('modal-container');
+    const closeBtn = document.getElementById('close-modal-btn');
+    const cancelBtn = document.getElementById('cancel-btn');
+    const serialForm = document.getElementById('serial-form');
+
+    // Close trigger demonstration
+    const closeModal = () => {
+      modalContainer.classList.add('opacity-0', 'pointer-events-none');
+      modalContainer.classList.remove('flex');
+      modalContainer.classList.add('hidden');
+    };
+
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
+
+    // Pill Selector toggle
+    const pills = document.querySelectorAll('.age-pill');
+    pills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        pills.forEach(p => {
+          p.classList.remove('bg-[#7D9C65]', 'text-white', 'font-bold');
+          p.classList.add('bg-surface-container-lowest', 'text-on-surface', 'font-semibold');
+        });
+        pill.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'font-semibold');
+        pill.classList.add('bg-[#7D9C65]', 'text-white', 'font-bold');
+      });
+    });
+
+    // Handle Category change to update code prefix
+    const radioCategories = document.querySelectorAll('input[name="parent_category"]');
+    const codeInput = document.getElementById('serial-code-input');
+    radioCategories.forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        if (e.target.value === 'SIMAK') {
+          codeInput.value = 'SRL-SIMAK-05';
+        } else {
+          codeInput.value = 'SRL-NALAR-03';
+        }
+      });
+    });
+
+    // Form submit demonstration
+    if (serialForm) {
+      serialForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Serial Baru "Sains Cilik & Keajaiban Alam" berhasil dibuat! Mengalihkan ke form Tambah Kartu Belajar...');
+        closeModal();
+      });
+    }
+  });
+</script></main></div></body></html>
