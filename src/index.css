@@ -1,0 +1,51 @@
+:root{
+  --primary:#005db8; --primary-container:#4d96ff; --on-primary:#fff;
+  --on-primary-fixed:#001b3e; --on-primary-fixed-variant:#00468c;
+  --secondary:#006e29; --secondary-container:#93f59c; --secondary-fixed:#96f89f;
+  --secondary-fixed-dim:#7bdb85; --on-secondary:#fff;
+  --on-secondary-container:#00732b; --on-secondary-fixed:#002107;
+  --on-secondary-fixed-variant:#00531d;
+  --tertiary:#7c5800; --tertiary-container:#c48d00; --tertiary-fixed:#ffdea8;
+  --on-tertiary-fixed:#271900;
+  --surface:#f9f9ff; --surface-low:#f0f3ff; --surface-high:#dfe8ff;
+  --surface-container:#e8eeff; --surface-lowest:#fff;
+  --on-surface:#0d1c33; --on-surface-variant:#414753;
+  --outline:#727784; --outline-variant:#c1c6d5;
+  --cream:#fbf6ea; --card:#fffdf5; --story:#f6eed9;
+  --font-head:'Plus Jakarta Sans',system-ui,sans-serif;
+  --font-body:'Be Vietnam Pro',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;width:100%}
+body{font-family:var(--font-body);background:var(--cream);color:var(--on-surface);overscroll-behavior:none}
+#root{min-height:100vh}
+button{font-family:var(--font-head);cursor:pointer;border:none;background:none}
+.app{min-height:100vh;display:flex;flex-direction:column}
+.topbar{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(249,249,255,.88);backdrop-filter:blur(16px);box-shadow:0 1px 8px rgba(0,0,0,.06)}
+.topbar-inner{height:64px;max-width:720px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.topbar-left,.topbar-right{display:flex;align-items:center;gap:8px}
+.icon-btn{min-width:44px;min-height:44px;width:44px;height:44px;border-radius:999px;background:var(--surface-container);display:flex;align-items:center;justify-content:center;color:var(--on-surface)}
+.brand-pill{display:flex;align-items:center;background:rgba(77,150,255,.16);color:var(--on-primary-fixed-variant);padding:6px 12px;border-radius:999px;font-weight:700;font-size:.875rem}
+.brand-pill .material-symbols-outlined{font-size:18px;margin-right:4px;color:var(--primary)}
+.star-pill{display:flex;align-items:center;background:var(--tertiary-fixed);color:var(--on-tertiary-fixed);padding:6px 12px;border-radius:999px;font-weight:700;font-size:.875rem}
+.star-pill .material-symbols-outlined{font-size:18px;margin-right:4px;color:var(--tertiary-container)}
+.avatar{width:32px;height:32px;border-radius:999px;background:var(--primary);display:flex;align-items:center;justify-content:center;color:var(--on-primary)}
+.page{flex:1;padding:80px 20px 32px;max-width:720px;width:100%;margin:0 auto;display:flex;flex-direction:column}
+.status{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
+.status-row{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.category-pill{display:inline-flex;align-items:center;gap:4px;padding:6px 12px;border-radius:999px;background:var(--secondary-container);color:var(--on-secondary-container);font-weight:700;font-size:.75rem}
+.owned-pill{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;background:var(--secondary-fixed);color:var(--on-secondary-fixed-variant);font-weight:700;font-size:.75rem}
+.level-card{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;background:var(--card);border:1px solid rgba(114,119,132,.3);border-radius:16px;padding:10px 12px}
+.level-left{display:flex;align-items:center;gap:8px}
+.level-badge{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:999px;background:var(--secondary-container);color:var(--on-secondary-container);font-size:.75rem;font-weight:700}
+.level-name{font-size:.75rem;color:var(--on-surface-variant);font-weight:600}
+.level-dots{display:flex;align-items:center;gap:4px}
+.dot{height:8px;width:28px;border-radius:999px;background:rgba(193,198,213,.5)}
+.dot.on{background:var(--secondary)}
+.lvl-text{font-size:12px;font-weight:700;color:var(--secondary);margin-left:4px}
+.progress{background:var(--card);border:1px solid rgba(114,119,132,.3);border-radius:16px;padding:12px;display:flex;flex-direction:column;gap:8px}
+.progress-top{display:flex;align-items:center;justify-content:space-between;font-size:.75rem}
+.saved{display:flex;align-items:center;gap:4px;color:var(--secondary);font-weight:700}
+.count{color:var(--on-surface-variant)}
+.bar{width:100%;height:10px;background:var(--surface-container);border-radius:999px;overflow:hidden;padding:2px}
+.bar-fill{height:100%;border-radius:999px;background:linear-gradient(to right,var(--secondary-container),var(--secondary),var(--primary))}
