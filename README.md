@@ -1,27 +1,29 @@
 # KidsCards — Kisah Nabi Yunus (React + Vite)
 
-Replika 1:1 dari `Design/permainan_kartu_sisi_depan_narasi_cerita/code.html`
-sebagai aplikasi React + Vite. Tidak memakai Tailwind CDN; semua gaya
-ditulis di `src/index.css` + `src/card.css` (tanpa ruleset kosong,
-sehingga warning CSS `Do not use empty rulesets` hilang).
+Replika dari:
+- `Design/permainan_kartu_sisi_depan_narasi_cerita/code.html` → `/`
+- `Design/permainan_kartu_sisi_belakang_4_pertanyaan_kunci_jawaban/code.html` → `/belakang-kartu`
 
-## Struktur
-- `index.html` — fonts (Plus Jakarta Sans, Be Vietnam Pro, Material Symbols), root React
-- `src/main.jsx` — entry React
-- `src/App.jsx` — rakitan halaman
-- `src/data.js` — konten kartu (judul, cerita, doa, narator, tips)
-- `src/components/Header.jsx` — topbar Flashcard Arena
-- `src/components/StoryCard.jsx` — status bar, kartu depan, audio player
-- `src/index.css` + `src/card.css` — design tokens & layout
+Tanpa Tailwind CDN; gaya di `src/index.css` + `src/card.css` + `src/back.css` + `src/back2.css`
+(tanpa ruleset kosong, tanpa `const c/isH` ganda — accordion & tab pakai state React).
 
-## Cara jalan
+## Rute
+- `/` — sisi depan: narasi Kisah Nabi Yunus, audio player, tombol flip → `/belakang-kartu`
+- `/belakang-kartu` — sisi belakang: status SIMAK Topik 8/25, 3 pertanyaan selesai + 1 aktif,
+  tab Pilihan Ganda/Manual, kunci jawaban, progress 75%→100%, tips, celebration, lanjut Topik 9
+
+## Cara jalan (PENTING: jangan pakai `yarn dev`)
+`yarn` v1 crash di Node 24 (`kill ENOSYS`) sehingga server mati dan browser
+menampilkan "failed to load page". Jalankan Vite langsung via node:
+
 ```bash
-npm install
-npm run dev
-```
-Buka `http://localhost:5173`.
+# install (cukup sekali, atau saat tambah dependency)
+cmd /c "yarn install"
 
-## Interaksi
-- Tombol DENGARKAN/JEDA toggle state audio (hijau/biru).
-- Tombol "Buka 4 Pertanyaan Cerita" memberi efek press pada kartu.
-- Ikon volume toggle volume_up/volume_off.
+# jalankan dev server (langsung via node, stabil)
+cmd /c "node node_modules\vite\bin\vite.js --port 5173 --strictPort"
+
+# build produksi
+cmd /c "node node_modules\vite\bin\vite.js build"
+```
+Buka `http://localhost:5173/` dan `http://localhost:5173/belakang-kartu`.

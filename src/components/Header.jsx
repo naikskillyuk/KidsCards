@@ -1,12 +1,17 @@
+import { useLocation, useNavigate } from 'react-router-dom'
 import '../card.css'
 
 export default function Header({ muted, onToggleMute }) {
+  const loc = useLocation()
+  const nav = useNavigate()
+  const isBack = loc.pathname === '/belakang-kartu'
+
   return (
     <header className="topbar">
       <div className="topbar-inner">
         <div className="topbar-left">
-          <button className="icon-btn" aria-label="Kembali ke Serial Kartu" type="button">
-            <span className="material-symbols-outlined">arrow_back</span>
+          <button className="icon-btn" aria-label={isBack ? 'Pause or Exit Game' : 'Kembali ke Serial Kartu'} type="button" onClick={() => nav(-1)}>
+            <span className="material-symbols-outlined">{isBack ? 'close' : 'arrow_back'}</span>
           </button>
           <div className="brand-pill">
             <span className="material-symbols-outlined">school</span>
