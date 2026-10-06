@@ -34,6 +34,8 @@
 .celebrate b{font-family:var(--font-head);font-size:.875rem;color:var(--on-secondary-fixed)}
 .celebrate small{font-size:.875rem;color:var(--on-secondary-fixed-variant)}
 .next-btn{min-height:56px;width:100%;background:var(--primary);color:var(--on-primary);font-family:var(--font-head);font-weight:700;font-size:1rem;border-radius:12px;display:flex;align-items:center;justify-content:center;gap:4px;box-shadow:0 8px 20px rgba(0,93,184,.3);margin:4px 0 16px}
+.next-btn:disabled{opacity:.55;cursor:not-allowed;box-shadow:none}
+.pause-btn{min-height:48px;width:100%;padding:10px 16px;background:var(--surface-container);color:var(--primary);border:1px solid var(--outline-variant);border-radius:8px;display:flex;align-items:center;justify-content:center;gap:8px;font-family:var(--font-head);font-weight:700;text-align:center}
 .complete-btn{min-height:56px;width:100%;margin-top:4px;background:var(--secondary);color:var(--on-secondary);font-family:var(--font-head);font-weight:700;font-size:1rem;border-radius:12px;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 4px 10px rgba(0,110,41,.3)}
 .complete-btn.done{background:var(--secondary-container);color:var(--on-secondary-fixed-variant)}
 .guide-tag{background:var(--tertiary-fixed);color:var(--on-tertiary-fixed);font-family:var(--font-head);font-size:.75rem;padding:2px 8px;border-radius:999px}

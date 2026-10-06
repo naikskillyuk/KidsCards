@@ -1,13 +1,31 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { quizData } from '../quizData.js'
-import DoneQuestion from './DoneQuestion.jsx'
+import { readQuizSession, saveQuizSession } from '../quizSession.js'
 import ActiveQuestion from './ActiveQuestion.jsx'
 
+const questions = [...quizData.questions, { ...quizData.q4, n: 4 }]
+
 export default function BackPage() {
-  const [done, setDone] = useState(false)
-  const pct = done ? 100 : 75
-  const label = done ? '4 dari 4 Terjawab ✨ (Lengkap)' : 'Pertanyaan Kuis 3 dari 4 Terjawab ✨'
+  const navigate = useNavigate()
+  const [completedQuestions, setCompletedQuestions] = useState(() => readQuizSession()?.completedQuestions ?? [])
+  const completedCount = completedQuestions.length
+  const allAnswered = completedCount === questions.length
+  const pct = (completedCount / questions.length) * 100
+  const label = allAnswered
+    ? '4 dari 4 Terjawab ✨ (Lengkap)'
+    : `Pertanyaan Kuis ${completedCount} dari 4 Terjawab ✨`
+
+  const toggleQuestionDone = (questionNumber) => {
+    setCompletedQuestions((current) => current.includes(questionNumber)
+      ? current.filter((number) => number !== questionNumber)
+      : [...current, questionNumber])
+  }
+
+  const stopAndContinueLater = () => {
+    saveQuizSession({ completedQuestions, paused: true })
+    navigate('/')
+  }
 
   return (
     <main className="page" style={{ background: 'var(--surface)', paddingTop: 80 }}>
@@ -56,8 +74,14 @@ export default function BackPage() {
             </Link>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-            {quizData.questions.map((q) => (<DoneQuestion key={q.n} q={q} />))}
-            <ActiveQuestion done={done} onToggleDone={() => setDone((v) => !v)} />
+            {questions.map((q) => (
+              <ActiveQuestion
+                key={q.n}
+                q={q}
+                done={completedQuestions.includes(q.n)}
+                onToggleDone={() => toggleQuestionDone(q.n)}
+              />
+            ))}
           </div>
         </div>
         <div className="tips-box">
@@ -67,16 +91,20 @@ export default function BackPage() {
             <p>{quizData.tips}</p>
           </div>
         </div>
-        <div className={done ? 'celebrate ring' : 'celebrate'}>
+        <div className={allAnswered ? 'celebrate ring' : 'celebrate'}>
           <span className="ico"><span className="material-symbols-outlined" style={{ fontSize: 24 }}>stars</span></span>
           <div style={{ minWidth: 0 }}>
-            <b>Topik 8 Siap Diselesaikan! <span style={{ color: 'var(--tertiary)' }}>+10 Bintang</span></b>
-            <br /><small>Progres Kartu Terupdate: 8 / 25 Topik Selesai</small>
+            <b>{allAnswered ? <>Topik 8 Siap Diselesaikan! <span style={{ color: 'var(--tertiary)' }}>+10 Bintang</span></> : 'Topik 8 Belum Selesai'}</b>
+            <br /><small>{allAnswered ? 'Progres Kartu Terupdate: 8 / 25 Topik Selesai' : `Pertanyaan Terjawab: ${completedCount} / ${questions.length}`}</small>
           </div>
         </div>
-        <button type="button" className="next-btn">
-          <span>Selesaikan Topik 8 &amp; Lanjut ke Topik 9: Nabi Zakariya a.s.</span>
+        <button type="button" className="next-btn" disabled={!allAnswered}>
+          <span>{allAnswered ? 'Selesaikan Topik 8 & Lanjut ke Topik 9: Nabi Zakariya a.s.' : 'Selesaikan 4 Pertanyaan untuk Lanjut'}</span>
           <span className="material-symbols-outlined" style={{ fontSize: 24 }}>rocket_launch</span>
+        </button>
+        <button type="button" className="pause-btn" onClick={stopAndContinueLater}>
+          <span className="material-symbols-outlined" aria-hidden="true">save</span>
+          Hentikan Permainan dan Lanjutkan Nanti
         </button>
       </div>
     </main>

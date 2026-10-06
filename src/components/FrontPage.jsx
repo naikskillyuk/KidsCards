@@ -2,9 +2,12 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import StoryCard from './StoryCard.jsx'
 import { cardData } from '../data.js'
+import { readQuizSession } from '../quizSession.js'
 
 export default function FrontPage() {
   const [pressed, setPressed] = useState(false)
+  const savedSession = readQuizSession()
+  const hasPausedGame = savedSession?.paused === true
 
   const pressCard = () => {
     setPressed(true)
@@ -15,8 +18,8 @@ export default function FrontPage() {
     <main className="page">
       <StoryCard pressed={pressed} onFlipHint={pressCard} />
       <Link to="/belakang-kartu" className="flip-btn" onClick={pressCard} style={{ textDecoration: 'none' }}>
-        <span className="material-symbols-outlined spin">autorenew</span>
-        <span>Buka 4 Pertanyaan Cerita (Balik Kartu)</span>
+        <span className="material-symbols-outlined">{hasPausedGame ? 'play_arrow' : 'autorenew'}</span>
+        <span>{hasPausedGame ? 'Lanjutkan Permainan' : 'Buka 4 Pertanyaan Cerita (Balik Kartu)'}</span>
         <span className="material-symbols-outlined">arrow_forward</span>
       </Link>
       <div className="tips">
@@ -33,7 +36,7 @@ export default function FrontPage() {
         </button>
         <div className="quiz-badge">
           <span className="material-symbols-outlined">quiz</span>
-          <span>Kuis Belum Dimulai (0/4)</span>
+          <span>{hasPausedGame ? `Permainan Disimpan (${savedSession.completedQuestions.length}/4)` : 'Kuis Belum Dimulai (0/4)'}</span>
         </div>
       </div>
     </main>
