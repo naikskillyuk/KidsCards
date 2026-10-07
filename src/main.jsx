@@ -6,6 +6,7 @@ import './card.css'
 import './back.css'
 import './back2.css'
 import './reward.css'
+import './nalar.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
