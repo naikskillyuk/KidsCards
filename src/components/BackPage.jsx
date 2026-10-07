@@ -24,7 +24,7 @@ export default function BackPage() {
 
   const stopAndContinueLater = () => {
     saveQuizSession({ completedQuestions, paused: true })
-    navigate('/')
+    navigate('/depan-kartu')
   }
 
   return (
@@ -69,7 +69,7 @@ export default function BackPage() {
                 <div className="quiz-sub">{quizData.subtitle}</div>
               </div>
             </div>
-            <Link to="/" className="flip-back">
+            <Link to="/depan-kartu" className="flip-back">
               <span className="material-symbols-outlined" style={{ fontSize: 18 }}>flip</span>Lihat Narasi
             </Link>
           </div>
@@ -98,7 +98,7 @@ export default function BackPage() {
             <br /><small>{allAnswered ? 'Progres Kartu Terupdate: 8 / 25 Topik Selesai' : `Pertanyaan Terjawab: ${completedCount} / ${questions.length}`}</small>
           </div>
         </div>
-        <button type="button" className="next-btn" disabled={!allAnswered}>
+        <button type="button" className="next-btn" disabled={!allAnswered} onClick={() => { if (allAnswered) navigate('/kartu-selesai') }}>
           <span>{allAnswered ? 'Selesaikan Topik 8 & Lanjut ke Topik 9: Nabi Zakariya a.s.' : 'Selesaikan 4 Pertanyaan untuk Lanjut'}</span>
           <span className="material-symbols-outlined" style={{ fontSize: 24 }}>rocket_launch</span>
         </button>

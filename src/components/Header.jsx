@@ -4,7 +4,7 @@ import '../card.css'
 export default function Header({ muted, onToggleMute }) {
   const loc = useLocation()
   const nav = useNavigate()
-  const isBack = loc.pathname === '/belakang-kartu'
+  const isBack = loc.pathname === '/belakang-kartu' || loc.pathname === '/kartu-selesai'
 
   return (
     <header className="topbar">
